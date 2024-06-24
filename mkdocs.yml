@@ -1,0 +1,9 @@
+site_name: RCPEDIA
+nav: 
+ - Home: index.md
+ - About: about.md
+theme: 
+  name: material
+  custom_dir: overrides
+extra_css:
+  - dassests/stylesheets/sh.css
