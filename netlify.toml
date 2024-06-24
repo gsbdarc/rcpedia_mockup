@@ -1,10 +1,17 @@
 [build]
-publish = "site"
-command = """
-restore_home_cache ".cache" "pip cache" &&
-restore_cwd_cache '.venv' 'python virtualenv' &&
-pip3 install -q poetry &&
-poetry config virtualenvs.in-project true &&
-poetry install -v &&
-mkdocs build -d site
-"""
+  publish = "site"
+  command = """
+    echo "Starting build process..." &&
+    echo "Installing Poetry..." &&
+    pip3 install -q poetry &&
+    poetry --version &&
+    poetry config virtualenvs.in-project true &&
+    echo "Installing dependencies..." &&
+    poetry install -v &&
+    echo "Building site..." &&
+    mkdocs build -d site &&
+    echo "Build completed."
+  """
+
+[build.environment]
+  PYTHON_VERSION = "3.12"
