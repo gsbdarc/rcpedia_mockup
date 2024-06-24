@@ -29,7 +29,7 @@
 
 /* title style */
 .md-header__title {
-  font-family: "Bangers", Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size:   1.2rem;
 }
 .md-header__title .md-ellipsis:after {

@@ -4,6 +4,29 @@ nav:
  - About: about.md
 theme: 
   name: material
-  custom_dir: overrides
+  features:
+    - announce.dismiss
+    - header.autohide
+    - content.code.annotate
+    - navigation.indexes
+   #- navigation.instant # instant loading doesn't work well with our landing page
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+
 extra_css:
-  - dassests/stylesheets/sh.css
+  - stylesheets/index.css
+  - stylesheets/sh.css
+  - stylesheets/fonts.css
+extra_javascript:
+  - https://code.jquery.com/jquery-3.5.1.slim.min.js
+  - https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js

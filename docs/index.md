@@ -1,5 +1,3 @@
-# Welcome to Rcepdia
-
 
 <!-- HTML interlude for the main page logo -->
 <style>
@@ -13,7 +11,7 @@
 }
 </style>
 <img id="logo_head" align="center" width="800px"
-     alt="Rcpedia" src="../assests/images/yen-computing-infrastructure.png">
+     alt="Rcpedia" src="images/yen-computing-infrastructure.png">
 <!-- resuming normal Markdown operations -->
 
 
