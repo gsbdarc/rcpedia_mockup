@@ -6,7 +6,7 @@ authors = ["Jeff. O <ottjeffery@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = ">=3.8,<4.0"
 mkdocs = "^1.6.0"
 mkdocs-material = "^9.5.27"
 pymdown-extensions = "^10.8.1"
