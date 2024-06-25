@@ -1,9 +1,0 @@
-[build]
-  publish = "site"
-  command = """
-    echo "Creating virtual environment..." &&
-  """
-
-[build.environment]
-  PIP_NO_CACHE_DIR = "off"
-  PYTHON_VERSION = "3.8"
