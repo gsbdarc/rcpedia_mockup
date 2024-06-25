@@ -1,17 +1,17 @@
 [build]
   publish = "site"
   command = """
-    echo "Starting build process..." &&
-    echo "Installing Poetry..." &&
-    pip3 install -q poetry &&
-    poetry --version &&
-    poetry config virtualenvs.in-project true &&
+    echo "Creating virtual environment..." &&
+    python3 -m venv .venv &&
+    echo "Activating virtual environment..." &&
+    source .venv/bin/activate &&
     echo "Installing dependencies..." &&
-    poetry install -v &&
+    pip install -r requirements.txt &&
     echo "Building site..." &&
     mkdocs build -d site &&
     echo "Build completed."
   """
 
 [build.environment]
-  PYTHON_VERSION = "3.11"
+  PIP_NO_CACHE_DIR = "off"
+  PYTHON_VERSION = "3.8"
