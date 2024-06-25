@@ -2,7 +2,7 @@
   publish = "site"
   command = """
     echo "Creating virtual environment..." &&
-    python3 -m venv .venv &&
+    python -m venv .venv &&
     echo "Virtual environment created." &&
     echo "Contents of the current directory:" &&
     ls -al &&
