@@ -30,3 +30,13 @@ For the real site please visit [Rcpedia](https://rcpedia.stanford.edu/).
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
+
+
+## Cool Stufff
+Yoidsnvcwoivcnweroiuvnerv
+ewvlknawev
+
+
+
+
+more cool sutff
