@@ -3,10 +3,15 @@
   command = """
     echo "Creating virtual environment..." &&
     python3 -m venv .venv &&
+    echo "Virtual environment created." &&
+    echo "Contents of the current directory:" &&
+    ls -al &&
     echo "Activating virtual environment..." &&
-    source .venv/bin/activate &&
+    . .venv/bin/activate &&
+    echo "Virtual environment activated." &&
     echo "Installing dependencies..." &&
     pip install -r requirements.txt &&
+    echo "Dependencies installed." &&
     echo "Building site..." &&
     mkdocs build -d site &&
     echo "Build completed."
