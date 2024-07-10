@@ -5,6 +5,11 @@ on:
     branches:
       - dev/blog
   workflow_dispatch:
+    inputs:
+        branch:
+          description: 'Branch to run the workflow on'
+          required: true
+          default: 'dev/blog'
 
 jobs:
   build:
