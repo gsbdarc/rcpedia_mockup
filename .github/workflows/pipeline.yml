@@ -1,9 +1,10 @@
-name: CI
+name: DeployStanford
 
 on:
   push:
     branches:
       - dev/blog
+  workflow_dispatch:
 
 jobs:
   build:
