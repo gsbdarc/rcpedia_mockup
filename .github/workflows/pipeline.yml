@@ -54,12 +54,6 @@ jobs:
       with:
         name: site
 
-    - name: List contents of workspace for debugging
-      run: ls -alh ${{ github.workspace }}
-
-    - name: List contents of site directory for debugging
-      run: ls -alh ${{ github.workspace }}/site/
-
     - name: Set up SSH
       run: |
         mkdir -p ~/.ssh
@@ -70,4 +64,4 @@ jobs:
     - name: Deploy to Stanford Hosts
       run: |
         ssh -i ~/.ssh/id_rsa rcpediaq@rcpedia-qa.su.domains "rm -rf /home/rcpediaq/rcpedia-dev.stanford.edu/*"
-        scp -i ~/.ssh/id_rsa -r ${{ github.workspace }}/site/* rcpediaq@rcpedia-qa.su.domains:/home/rcpediaq/rcpedia-dev.stanford.edu
+        scp -i ~/.ssh/id_rsa -r ${{ github.workspace }}/* rcpediaq@rcpedia-qa.su.domains:/home/rcpediaq/rcpedia-dev.stanford.edu
