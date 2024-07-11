@@ -1,4 +1,5 @@
 site_name: GSB RC Site 2024
+site_url: https://rcpedia-dev.stanford.edu
 theme:
   name: material
   custom_dir: docs/assets
