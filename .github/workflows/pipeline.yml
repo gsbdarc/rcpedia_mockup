@@ -57,6 +57,12 @@ jobs:
       with:
         name: site
 
+    - name: List contents of workspace for debugging
+      run: ls -alh ${{ github.workspace }}
+
+    - name: List contents of site directory for debugging
+      run: ls -alh ${{ github.workspace }}/site/
+
     - name: Set up SSH
       run: |
         mkdir -p ~/.ssh
