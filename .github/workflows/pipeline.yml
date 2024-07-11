@@ -1,6 +1,9 @@
 name: DeployStanford
 
 on:
+  push:
+    branches:
+      - dev/blog
   workflow_dispatch:
     inputs:
         branch:
