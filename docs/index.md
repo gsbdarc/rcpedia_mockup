@@ -2,6 +2,8 @@
 
 Welcome to GSB RC blog! Here, you can find articles on various topics, including topics guides on parallel programming, optimization using the Yen computing cluster at Stanford GSB. 
 
+mason wuz here
+
 _Last updated: 2024-06-27_
 
 ## Sections
