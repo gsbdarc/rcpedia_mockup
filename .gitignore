@@ -1,0 +1,11 @@
+# Ignore the search index file in the site directory
+/site/search/search_index.json
+
+# Ignore the virtual environment directory at the root
+/.venv
+
+# Ignore the sitemap file in the site directory
+/site/sitemap.xml.gz
+
+# Ignore the index file in the site directory
+/site/index.html
