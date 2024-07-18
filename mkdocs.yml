@@ -1,15 +1,13 @@
-site_name: RCPEDIA
-nav: 
- - Home: index.md
- - About: about.md
-theme: 
+site_name: GSB RC Site 2024
+site_url: https://rcpedia-dev.stanford.edu
+theme:
   name: material
+  custom_dir: docs/assets
   features:
     - announce.dismiss
     - header.autohide
     - content.code.annotate
     - navigation.indexes
-   #- navigation.instant # instant loading doesn't work well with our landing page
     - navigation.sections
     - navigation.tabs
     - navigation.tabs.sticky
@@ -18,15 +16,31 @@ theme:
     - search.highlight
     - search.share
     - search.suggest
-
   font:
     text: Roboto
     code: Roboto Mono
 
+plugins:
+  - search
+  - blogging
+  - git-revision-date-localized
+
+markdown_extensions:
+  - codehilite
+  - toc
+  - pymdownx.superfences
+
+nav:
+  - Home: index.md
+  - Yen Servers: yen-servers.md
+  - Blog:
+      - Optimization Software: _posts/2024-01-26-optimization_software.md 
+
+extra:
+  update_date: 2024-06-27
+
 extra_css:
-  - stylesheets/index.css
-  - stylesheets/sh.css
-  - stylesheets/fonts.css
-extra_javascript:
-  - https://code.jquery.com/jquery-3.5.1.slim.min.js
-  - https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js
+  - assets/css/index.css
+  - assets/css/sh.css
+  - assets/css/fonts.css
+  - css/custom.css

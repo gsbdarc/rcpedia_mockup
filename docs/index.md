@@ -1,42 +1,16 @@
+# Welcome to GSB RC Blog
 
-<!-- HTML interlude for the main page logo -->
-<style>
-@media only screen and (max-width: 720px) {
-    #logo_head {
-        display: none;
-    }
-}
-# logo_head {
-    margin-top: -50px;
-}
-</style>
-<img id="logo_head" align="center" width="800px"
-     alt="Rcpedia" src="images/yen-computing-infrastructure.png">
-<!-- resuming normal Markdown operations -->
+Welcome to GSB RC blog! Here, you can find articles on various topics, including topics guides on parallel programming, optimization using the Yen computing cluster at Stanford GSB. 
 
+mason wuz here
 
-For the real site please visit [Rcpedia](https://rcpedia.stanford.edu/).
+_Last updated: 2024-06-27_
 
-## Commands
+## Sections
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+- [Yen Servers](yen-servers.md)
+- [Blog](#blog)
 
-## Project layout
+## Blog
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
-
-
-## Cool Stufff
-Yoidsnvcwoivcnweroiuvnerv
-ewvlknawev
-
-
-
-
-more cool sutff
+- [Optimization Software](_posts/2024-01-26-optimization_software.md)
