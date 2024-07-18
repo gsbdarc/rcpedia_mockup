@@ -3,13 +3,13 @@ name: DeployStanford
 on:
   push:
     branches:
-      - dev/blog
+      - QA
   workflow_dispatch:
     inputs:
         branch:
           description: 'Branch to run the workflow on'
           required: true
-          default: 'dev/blog'
+          default: 'QA'
 
 jobs:
   build:
