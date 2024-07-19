@@ -1,16 +1,21 @@
-# Welcome to GSB RC Blog
+# Welcome to RCpedia
 
-Welcome to GSB RC blog! Here, you can find articles on various topics, including topics guides on parallel programming, optimization using the Yen computing cluster at Stanford GSB. 
+RCpedia is a place to learn how to solve Research Computing tasks at Stanford GSB[.](images/narwhal04.png) 
 
-mason wuz here
+!!! warning
+    All the Yen servers are scheduled for a routine reboot next Thursday, July 25, 2024. During the downtime, the servers will be patched and updated, and logins are disabled. The machines are scheduled to cycle roughly every two months, and the downtime dates are posted on the message of the day when you log in to the Yens. Please complete any jobs and log out of the Yens before the reboot. If you have any questions or concerns, please send a Slack message or contact us at [gsb_darcresearch@stanford.edu](gsb_darcresearch@stanford.edu).
 
-_Last updated: 2024-06-27_
+![](/images/yen10-server.png)
 
-## Sections
+Ain't it sexy?
 
-- [Yen Servers](yen-servers.md)
-- [Blog](#blog)
+## Current Yen Systems Status
+<iframe class="airtable-embed" src="https://airtable.com/embed/shrS3FLv2TnfNDHgx?backgroundColor=red"
+        frameborder="0" onmousewheel="" width="100%" height="500"
+        style="background: transparent; border: 1px solid #ccc;"></iframe>
 
-## Blog
+## Recent Changes
+This whole dang website is brand spankin' new.
 
-- [Optimization Software](_posts/2024-01-26-optimization_software.md)
+## About Us
+RCpedia is written and maintained by the Research Hub [DARC (Data, Analytics, and Research Computing) group](https://www.gsb.stanford.edu/faculty-research/darc). In addition to supporting research computing, the DARC team engages directly with faculty members preparing large-scale datasets, assisting with data analysis, and consulting on research design.
