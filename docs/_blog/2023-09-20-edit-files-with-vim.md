@@ -1,18 +1,5 @@
 # Edit Files on the Command Line
 <div class="last-updated">Last updated: 2023-09-20</div>
----
-title: 4. Edit Files on the Command Line
-layout: indexPages/training
-subHeader: Data, Analytics, and Research Computing. 
-keywords: yen, vi, editor, scheduler, batch, cluster, server
-category: training 
-parent: training
-section: intermediateYens 
-order: 4 
-updateDate: 2023-09-20
----
-
-# {{ page.title }}
 
 We can utilize JupyterHub Text Editor to <a href="/gettingStarted/8_jupyterhub.html#text-file-editor" target="_blank">directly edit scripts on the Yens</a>. 
 However, sometimes it is more convenient to quickly edit files from the command line (without needing to go to a different program like the browser
