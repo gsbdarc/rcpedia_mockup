@@ -8,7 +8,8 @@ _Last updated: 2024-06-27_
 
 ## Sections
 
-- [Yen Servers](yen-servers.md)
+- [Getting Started](yen-servers.md)
+- [Policies](policies.md)
 - [Blog](#blog)
 
 ## Blog
