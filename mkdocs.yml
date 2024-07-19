@@ -29,13 +29,33 @@ markdown_extensions:
   - codehilite
   - toc
   - pymdownx.superfences
+  - admonition
+  - pymdownx.details
 
 nav:
   - Home: index.md
-  - Yen Servers: yen-servers.md
-  - Blog:
-      - Optimization Software: _posts/2024-01-26-optimization_software.md 
-
+  - Getting Started: 
+      - Yen Servers: _getting_started/yen-servers.md
+      - Access the Yens: _getting_started/how_access_yens.md
+  - Policies: 
+      - Collaborators: _policies/collaborators.md
+      - Workgroups: _policies/workgroups.md
+      - Services: _policies/services.md
+  - User Guide: 
+      - Best Practices -- Julia SLURM Job Arrays: _user_guide/best_practices_julia_jobarray.md
+      - Best Practices -- Monitor Resource Usage: _user_guide/best_practices_monitor_usage.md
+      - Best Practices -- GUI: _user_guide/best_practices_gui.md
+      - Best Practices -- Julia on Jupyter: _user_guide/best_practices_julia_jupyter.md
+  - Tech Blog:
+      - Run Jobs on Yen's GPU Node: _posts/2024-04-25-yen_gpu.md
+      - Run on GPU: _blog/2024-03-28-run-gpu.md
+      - Reproducible Research Essentials: _posts/2024-02-28-reproducibility_tips.md 
+      - Optimization Software: _posts/2024-01-26-optimization_software.md
+      - Edit Files on Command Line: _blog/2023-09-20-edit-files-with-vim.md
+      - How do I extract compressed files?: _posts/2023-08-18-how_to_uncompress.md
+      - SEC Filings: _blog/2023-05-16-EDGARmirror.md
+      - What is a "man-in-the-middle" warning?: _posts/2020-03-13-man_in_middle.md  
+      
 extra:
   update_date: 2024-06-27
 
