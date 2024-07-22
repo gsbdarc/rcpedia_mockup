@@ -12,9 +12,10 @@ Welcome to the Yen Servers documentation. This site provides information on data
 
 Explore the various resources and documentation available for Yen Servers.
 
-At the GSB, we have a collection of Ubuntu Linux servers (the `yen` cluster) specifically for doing your research computing work.  If you are a faculty member, PhD student, post-doc or research fellow, by default you should have access to these servers.  They are administered by the [Stanford Research Computing Center (SRCC)](https://srcc.stanford.edu) and located in Stanford's data centers.
+At the GSB, we have a collection of Ubuntu Linux servers (the `yen` cluster) specifically for doing your research computing work.  If you are a faculty member, PhD student, post-doc or research fellow, by default you should have access to these servers.  They are administered by the [Stanford Research Computing (SRC)](https://srcc.stanford.edu) and located in Stanford's data centers.
 
-{% include important.html content="The `yen` servers are not designed for teaching or high risk data." %}
+!!! important
+    The `yen` servers are not designed for teaching or high risk data.
 
 ## Why use the `yen` servers?
 
@@ -30,7 +31,7 @@ Even when your laptop is capable of doing the job, you may still want to offload
 
 #### Licensed software
 
-Tools like Matlab and Stata aren't free for personal use, but are installed and licensed to use on the `yen` servers.
+Tools like Matlab and Stata are installed and licensed to use on the `yen` servers.
 
 
 <div class="row">
@@ -46,10 +47,9 @@ Tools like Matlab and Stata aren't free for personal use, but are installed and 
     <div class="col col-md-2"></div>
   </div>
 
-<br>
 ## How to connect
-
-{% include tip.html content="New to using a research server?  Learn about [Getting Started](../gettingStarted)" %}
+!!! tip
+    New to using a research server?  Learn about [Getting Started](../gettingStarted)
 
 There are various ways to connect to the `yen` servers.
 
@@ -57,9 +57,10 @@ There are various ways to connect to the `yen` servers.
 * A terminal on [JupyterLab](webBasedCompute.html)
 * RStudio or Jupyter Notebook on [JupyterLab](webBasedCompute.html)
 
-When you SSH in to `yen.stanford.edu`, a load-balancer will assign you to `yen1`, `yen2`, `yen3`, `yen4` or `yen5`.  The `yen10`, `yen11`, `yen12`, `yen13`, `yen14`, `yen15` and `yen-gpu1` servers can only be accessed using the [scheduler](scheduler.html).
+When you SSH in to `yen.stanford.edu`, a load-balancer will assign you to `yen1`, `yen2`, `yen3`, `yen4` or `yen5`.  The `yen11`, `yen12`, `yen13`, `yen14`, `yen15`, `yen16`, `yen17`, `yen18`, `yen-gpu1`, `yen-gpu2`, and `yen-gpu3` servers can only be accessed using the [scheduler](scheduler.html).
 
-{% include tip.html content="Any work running on an interactive server (yen[1-5]) can only be started or stopped from that server." %}
+!!! tip
+    Any work running on an interactive server (yen[1-5]) can only be started or stopped from that server.
 
 ## Other page
 
@@ -76,12 +77,9 @@ When the required amount of resources (CPU cores and/or memory) becomes availabl
 We use <A HREF="/training/3_yen_slurm.html" target="_blank">Slurm scheduler</A> as our job scheduler (and so does <a href="https://www.sherlock.stanford.edu/docs/overview/introduction" target="_blank">Sherlock HPC</a> and a lot of other supercomputers
 at various academic institutions and national labs).
 
-### Yen10 node
-![](/images/yen10-node.png)
+Yen-Slurm has 11 nodes - yen[11-18] and yen-gpu[1-3], each with multiple CPU's (processors) containing multiple cores and some with GPU's.
 
-Yen-Slurm has 9 nodes - yen[11-17] and yen-gpu[1-2], each with multiple CPU's (processors) containing multiple cores and some with GPU's.
-
-For example, yen11, yen[15-17] have 2 CPU's, each with 128 cores for the total of 256 CPU cores and 1 TB of RAM; yen[12-14] each have 1.5T of RAM and 32 CPU cores; yen-gpu[1-2] nodes have 64 cores, 256 G of RAM and 4 GPU's. Together, yen-slurm cluster of 9 nodes has 1248 CPU cores, 9 T of RAM and 8 GPU's.
+For example, yen11, yen[15-18] have 2 CPU's, each with 128 cores for the total of 256 CPU cores and 1 TB of RAM; yen[12-14] each have 1.5T of RAM and 32 CPU cores; yen-gpu[1-3] nodes have 64 cores, 256 G of RAM and 4 GPU's. Together, yen-slurm cluster of 11 nodes has 1500+ CPU cores, 10 T of RAM and 12 GPU's.
 
 ## Other page
 #  Introduction to the Yen Servers
@@ -96,25 +94,11 @@ for your computing needs. These Linux research servers are useful for a variety 
 
 ## Yen Servers
 
-![](/images/intro_to_yens/yens.png)
+![](/images/yens.png)
 
 At the GSB, we have a collection of Ubuntu Linux servers (the `yen` cluster) specifically for doing your research computing work.
  If you are a faculty member, PhD student, post-doc or research fellow, by default you should have access to these servers.
 
-<div class="row">
-    <div class="col-lg-12">
-      <H1> </H1>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-12">
-     <div class="fontAwesomeStyle"><i class="fas fa-tachometer-alt"></i> Current cluster configuration</div>
-<iframe class="airtable-embed" src="https://airtable.com/embed/shr0XAunXoKz62Zgl?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
-    </div>
-    <div class="col col-md-2"></div>
-  </div>
-
----
 ## Why use the `yen` servers?
 
 These servers offer you several advantages over using a laptop or desktop computer.
@@ -139,4 +123,5 @@ Tools like Matlab and Stata are installed and licensed to use on the `yen` serve
 
 The project files and any large output should live on ZFS file system (not in your home). The ZFS capacity is nearly 1 PB (petabyte).
 
-{% include important.html content="The Yen servers are *not* approved for high risk data." %}
+!!! danger 
+    The Yen servers are *not* approved for high risk data.

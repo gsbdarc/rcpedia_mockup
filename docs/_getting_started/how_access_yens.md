@@ -1,14 +1,11 @@
 # How Do I Get Access to the Yens?
 
-## Latest Updates
-
-_Last updated: 2024-07-18_
-
 By default, GSB faculty, staff, PhD students, and research fellows have access to the Yens.
 
-{% include tip.html content="Learn more about the Yens and how to connect [here](/yen/index.html)." %}
+!!! tip
+    Learn more about the Yens and how to connect [here](/yen/index.html)
 
-If you are not part of this group, you will need to have sponsored access from a GSB faculty member. You can find out more information about this [here](/yen/Collaborators.html).
+If you are not part of this group, you will need to have sponsored access from a GSB faculty member. You can find out more information about this [here](/_policies/collaborators).
 
 ## Other page
 ## Why Can't I Log into the Yens?
@@ -30,23 +27,27 @@ If you are attempting to access the Yen servers from outside of Stanford, you ma
 
 ## Use Full yen.stanford.edu Address
 If you run into an error such as this one,
+
 ```
 ssh: Could not resolve hostname yen1: nodename nor servname provided, or not known
- ```
+```
+
 then you are probably not entering in the full address of the server that you are trying to log into. Instead, please be sure to explicitly type:
+
 ```
 ssh <SUNetID>@yen1.stanford.edu
 ```
 Learn more about connecting to the Yens [here](/yen/index.html).
 
-# Other page
-# Logging In
-{% include important.html content="You should have a SUNet ID as a prerequisite to use the Yen server and know your password." %}
+## Other page
+## Logging In
+!!! important
+    You should have a SUNet ID as a prerequisite to use the Yen server and know your password.
 
 Yen access is provided in the following two ways:
 
 1. Automatically granted to GSB faculty, postdocs, PhD Students, and Research Fellows
-2. <a href="/yen/Collaborators.html" target="_blank">Collaborator access</a> sponsored by a GSB faculty member
+2. <a href="/_policies/collaborators" target="_blank">Collaborator access</a> sponsored by a GSB faculty member
 
 If you belong to one of the above two groups, you can use the Yen servers! Below are the instructions for connecting to the Yen servers.
 
@@ -54,8 +55,8 @@ We can use a Secure Shell (SSH) protocol to securely connect from your local lap
 Below are the instructions for connecting from a Mac / Linux OS laptop and a Windows laptop.
 
 
-# Login
------------------------------------
+## Login
+Open a terminal or a Moba terminal. Enter the SSH command to login into the server as shown below (Note: replace SUNetID with **your SUNet ID** and do not type the brackets!). You will
 be asked to enter your password and authenticate with Duo. You will **not** see your password being typed.
 
 ```bash
@@ -65,6 +66,8 @@ $ ssh <SUNetID>@yen.stanford.edu
 For example, I login with:
 ```bash
 $ ssh nrapstin@yen.stanford.edu
+```
+
 If the login is successful, you will see something similar to the following:
 
 ![](/images/ssh_yens.png)
@@ -77,11 +80,11 @@ Here is the example of how to login to the yen3 server:
 $ ssh <SUNetID>@yen3.stanford.edu
 ```
 
-{% include tip.html content="If you do not want to type `ssh yen.stanford.edu` every time you want to login..."%}
+!!! tip
+    If you do not want to type `ssh yen.stanford.edu` every time you want to login... Save an alias in your `~/.bash_profile` with a shorhand for the yen servers. For example, my `~/.bash_profile` has this line `alias yen="ssh yen.stanford.edu"`. Then instead of typing `ssh yen.stanford.edu`, I simply type `yen` from the Terminal.
 
-Save an alias in your `~/.bash_profile` with a shorhand for the yen servers. For example, my `~/.bash_profile` has this line
- `alias yen="ssh yen.stanford.edu"`. Then instead of typing `ssh yen.stanford.edu`, I simply type `yen` from the Terminal
-{% include tip.html content="If your user name on your computer is the same as your SUNet ID, you can simply type `ssh yen.stanford.edu`."%}
+!!! tip
+    If your user name on your computer is the same as your SUNet ID, you can simply type `ssh yen.stanford.edu`.
 
 ## With a graphical interface
 

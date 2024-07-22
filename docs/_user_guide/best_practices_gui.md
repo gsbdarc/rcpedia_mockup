@@ -4,7 +4,8 @@ If you plan to run `Rstudio`, `MATLAB`, `SAS` or any other Graphical User Interf
 you will need to connect to the Yens with X-forwarding enabled. UIT has a [page](https://uit.stanford.edu/service/sharedcomputing/moreX) describing this in more detail,
 along with information about auxiliary, system-specific software that you will need to have installed before proceeding.
 
-{% include note.html content="Some common system-specific software include `XQuartz` for Mac users and `Xming` for Windows users." %}
+!!! note
+    Some common system-specific software include `XQuartz` for Mac users and `Xming` for Windows users.
 
 Make sure you have X11 software installed on your local computer first:
 
@@ -30,7 +31,7 @@ xeyes
 ```
 which will pop up a window with eyes tracking where your mouse is.
 
-![](/images/intro_to_yens/xeyes.png)
+![](/images/xeyes.png)
 
 ### Examples
 #### R / RStudio GUI
@@ -58,12 +59,12 @@ rstudio
 
 The RStudio GUI will pop open and you can do anything you would normally do in RStudio (but with noticeable delay due to X tunneling):
 
-![](/images/intro_to_yens/rstudio-gui.png)
+![](/images/rstudio-gui.png)
 
 
 If you forget to load R module or loaded only the rstudio module, you will see an error that R is not found:
 
-![](/images/intro_to_yens/rstudio-err.png)
+![](/images/rstudio-err.png)
 
 If that happens, just load `R` module and start RStudio again.
 #### MATLAB
@@ -110,9 +111,11 @@ sas
 
 The SAS GUI will pop open and you can do anything you would normally do (but with noticeable delay due to X tunneling):
 
-![](/images/intro_to_yens/sas-gui.png)
+![](/images/sas-gui.png)
 
-{% include tip.html content="Alternatively, you can run the same software that you are used to running as a GUI in JupyterHub! Have a look [here](/yen/webBasedCompute.html) to learn more about JupyterHub on the Yens and the software available." %}
+!!! tip
+    Alternatively, you can run the same software that you are used to running as a GUI in JupyterHub! Have a look [here](/yen/webBasedCompute.html) to learn more about JupyterHub on the Yens and the software available.
+
 
 ## Other Page
 # Setup
@@ -168,7 +171,7 @@ $ xeyes
 ```
 which will pop up a window with eyes tracking where your mouse is.
 
-![](/images/intro_to_yens/xeyes.png)
+![](/images/xeyes.png)
 
 
 #### R / RStudio GUI
@@ -198,11 +201,11 @@ $ rstudio
 
 The RStudio GUI will pop open and you can do anything you would normally do in RStudio (but with noticeable delay due to X tunneling):
 
-![](/images/intro_to_yens/rstudio-gui.png)
+![](/images/rstudio-gui.png)
 
 
 If you forget to load R module or loaded only the rstudio module, you will see an error that R is not found:
 
-![](/images/intro_to_yens/rstudio-err.png)
+![](/images/rstudio-err.png)
 
 If that happens, just load R module and start RStudio again.

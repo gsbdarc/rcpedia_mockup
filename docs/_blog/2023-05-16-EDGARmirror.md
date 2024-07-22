@@ -3,7 +3,9 @@
 
 All companies are required to file registration statements, periodic reports, and other forms to the SEC and these filings are popular sources of data for researchers at the GSB. This topic guide covers some of the resources available to facilitate research using these filings and a few sample workflows.
 
-{% include note.html content="We gave a presentation on \"Using SEC Documents at the GSB\" on November 16, 2022. Watch the recording and view the slides [here](https://libguides.stanford.edu/hub-recordings#s-lg-box-29618224)." %}
+!!! note
+    We gave a presentation on "Using SEC Documents at the GSB" on November 16, 2022. Watch the recording and view the slides [here](https://libguides.stanford.edu/hub-recordings#s-lg-box-29618224).
+
 
 ## EDGAR
 
@@ -61,7 +63,8 @@ If you have a <a href="https://wrds-www.wharton.upenn.edu/" target="_blank">WRDS
 
 To access these filings, you can connect to <a href="https://wrds-www.wharton.upenn.edu/pages/support/the-wrds-cloud/introduction-wrds-cloud/" target="_blank">WRDS Cloud</a> and either navigate to `/wrds/sec/warchives/` for raw filings or `/wrds/sec/wrds_clean_filings/` for cleaned filings.
 
-{% include note.html content="The DARC team does not provide support for issues with WRDS. Please submit a ticket to [WRDS Support](https://wrds-www.wharton.upenn.edu/contact-support) instead." %}
+!!! note
+    The DARC team does not provide support for issues with WRDS. Please submit a ticket to [WRDS Support](https://wrds-www.wharton.upenn.edu/contact-support) instead.
 
 ## XBRL
 In an effort to standardize data submitted by companies to the SEC, the SEC commission <a href="https://www.sec.gov/structureddata/osd-inline-xbrl.html" target="_blank">adopted amendments in 2018 requiring the use</a> of the Inline XBRL (eXtensible Business Reporting Language) format in submissions of financial statement information. As a result, many recent forms on EDGAR (see <a href="https://www.sec.gov/info/edgar/edgartaxonomies.shtml" target="_blank">here</a> for a list of form types with XBRL) can be viewed with XBRL elements highlighted (<a href="https://www.sec.gov/ix?doc=/Archives/edgar/data/0000732717/000156276220000064/t-20191231.htm" target="_blank">example Form 10-K</a> from AT&T in 2020).
@@ -100,7 +103,8 @@ Reference Name of Report HTML Index (IName)
 Index Source: 1-Daily, 2-Full, 3-Both (SOURCE)
 ```
 
-{% include note.html content="You can also perform your filings search using the aforementioned [dataset on Redivis](https://redivis.com/datasets/dq12-4q4st0kjt), although you won't retrieve certain identification variables such as CIK and Ticker." %}
+!!! note
+    You can also perform your filings search using the aforementioned [dataset on Redivis](https://redivis.com/datasets/dq12-4q4st0kjt), although you won't retrieve certain identification variables such as CIK and Ticker.
 
 ### Readability and Sentiment Analysis
 
