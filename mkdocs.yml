@@ -45,6 +45,7 @@ nav:
       - Workgroups: _policies/workgroups.md
       - Services: _policies/services.md
       - Acknowledgements: _policies/acknowledgements.md
+      - User Limits: _policies/user_limits.md
   - User Guide: 
       - Best Practices -- Julia SLURM Job Arrays: _user_guide/best_practices_julia_jobarray.md
       - Best Practices -- Monitor Resource Usage: _user_guide/best_practices_monitor_usage.md
@@ -53,9 +54,17 @@ nav:
       - Best Practices -- Migrating From JupyterHub: _user_guide/best_practices_migrating_from_jupyter.md
       - Best Practices -- Parallel Processing Python: _user_guide/best_practices_parallel_processing_python.md
       - Best Practices -- R SLURM Job Array: _user_guide/best_practices_R_slurm_job_array.md
-      
+      - Best Practices -- File Management: _user_guide/best_practices_file_management.md
+      - Best Practices -- Python Job Array: _user_guide/best_practices_python_job_array.md
+      - Best Practices -- Matlab Slurm Job: _user_guide/best_practices_matlab_slurm_job.md
+      - Best Practices -- Optimization: _user_guide/best_practices_optimization.md
+      - Best Practices -- Python Virtual Environments: _user_guide/best_practices_python_env.md
+      - Best Practices -- R: _user_guide/best_practices_r.md
+      - Best Practices -- Archive: _user_guide/best_practices_archive.md
+      - Best Practices -- Why isn't JupyterHub Working?: _user_guide/best_practices_jupyter_does_not_work.md
+      - Data:
+          - Data Transfer: _user_guide/data_transfer.md
   - Tech Blog:
-      - Optimization Software: _blog/2024-01-26-optimization_software.md 
       - SEC Filings: _blog/2023-05-16-EDGARmirror.md
       - Run on GPU: _blog/2024-03-28-run-gpu.md
       - Edit Files on Command Line: _blog/2023-09-20-edit-files-with-vim.md
@@ -65,6 +74,9 @@ nav:
       - What is a man-in-the-middle warning?: _blog/2020-03-13-man_in_middle.md  
       - Merging Datasets in Dask: _blog/2023-02-09-merging_data_sets_dask.md
       - How to use Rclone: _blog/2023-09-18-rclone.md
+      - Working with Large Zip Files in Python: _blog/2022-10-10_zipfile_guide.md
+      - How Do I Install Stata on JupyterHub?: _blog/2022-02-24-install-stata-on-jupyter.md 
+      - How Do I Access SEC Documents?: _blog/2021-09-22-how_access_SEC.md 
       
 extra:
   update_date: 2024-06-27
