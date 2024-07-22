@@ -28,11 +28,16 @@ plugins:
 markdown_extensions:
   - codehilite
   - toc
+  - admonition
+  - pymdownx.details
   - pymdownx.superfences
 
 nav:
   - Home: index.md
   - Yen Servers: yen-servers.md
+  - Test_page: 
+    - Modules: _getting_started/modules.md
+    - Parallel Python: _user_guide/parallel_processing_python.md
   - Blog:
       - Optimization Software: _posts/2024-01-26-optimization_software.md 
 
