@@ -1,19 +1,3 @@
----
-title: Why isn't JupyterHub on the Yens working?
-layout: indexPages/faqs
-subHeader: Data, Analytics, and Research Computing.
-keywords: Jupyter, faq, notebook, server, Yens
-category: faqs
-parent: faqs
-section: software
-order: 1
-updateDate: 2022-01-04
----
-
-# {{ page.title }}
-
-{% include note.html content="Having issues seeing directories in JupyterHub? Please look at <a href=\"/faqs/jupyterhubDirectory.html\">this guide</a>"%}
-
 There are several common reasons why JupyterHub might not be working for you.
 
 ## Are you using Safari?

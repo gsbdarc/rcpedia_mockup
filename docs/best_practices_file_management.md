@@ -1,17 +1,3 @@
----
-title: Best Practices for File Management
-layout: indexPages/topicGuides
-subHeader: Data, Analytics, and Research Computing.
-keywords: files, management, directory, data, structure
-category: topicGuides
-parent: topicGuides
-order: 1
-updateDate: 2021-10-29
----
-
-
-# {{ page.title }}
-
 A working directory for a research project can fill up fast and become extremely messy in the process. If you are not careful with how you manage your files in a directory, you could easily end up with thousands of files titled `1.csv`, `2.csv`, `10.csv`, `100.csv`, etc. in a single directory with no index or metadata to describe the contents of those files. This is especially commonplace when running automated tasks that quickly generate new data. Not only will this result in confusion for the researchers using a directory, but it can cause unintended consequences for the processes monitoring the file system or later audits.
 
 Here are some best practices for file management that you can use the next time you start a project directory.
@@ -67,6 +53,3 @@ In addition to the "title" column in this sample index file, notice another colu
 
 ## Compress or Dump Large, Unused Directories
 It is easy to forget and leave behind your large directories once you are finished with a project, but this can cause a burden for backup and auditing tools and also make it difficult to transfer those files to a different system later on. If you know for sure that you are finished with a project and will not return to your files, please delete your large directories to free up precious storage space for other researchers. If there is a possibility that you may need to access your files again, but not in the near future, please compress your files. [This page](/gettingStarted/17_archive.html) discusses in detail how to archive your project directory.
-
-
-

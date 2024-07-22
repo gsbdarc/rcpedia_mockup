@@ -1,15 +1,3 @@
----
-title: Optimization Software on the Yens
-layout: indexPages/topicGuides
-subHeader: Data, Analytics, and Research Computing.
-keywords: optimization, AMPL, Gurobi, Knitro
-category: topicGuides
-parent: topicGuides
-order: 1
-updateDate: 2024-01-26
----
-
-# {{ page.title }}
 We have licensed and installed optimization software on the Yens that the GSB researchers can use including 
 <a href="https://www.gurobi.com" target="_blank">Gurobi</a>, <a href="https://www.artelys.com/solvers/knitro" target="_blank">Knitro</a> and <a href="https://ampl.com" target="_blank">AMPL</a>. 
 In this guide, we will show how to 

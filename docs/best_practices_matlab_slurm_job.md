@@ -1,17 +1,3 @@
----
-title: Slurm Job Matlab Example
-layout: indexPages/topicGuides
-subHeader: Data, Analytics, and Research Computing.
-keywords: slurm, scheduler, yen10, matlab
-category: topicGuides
-parent: topicGuides
-order: 1
-updateDate: 2020-10-08
----
-
-
-# {{ page.title }}
-
 ## Matlab Example Slurm Script
 The simplest Matlab script looks like:
 

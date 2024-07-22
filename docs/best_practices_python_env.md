@@ -1,16 +1,3 @@
----
-title: Virtual Environments for Python
-layout: indexPages/topicGuides
-subHeader: Data, Analytics, and Research Computing.
-keywords: environments, virtual, python, conda, venv, anaconda
-category: topicGuides
-parent: topicGuides
-order: 1
-updateDate: 2023-12-18
----
-
-
-# {{ page.title }}
 Python environments are a foundational aspect of professional Python development, allowing developers to isolate and manage Python packages and dependencies specific to individual projects or tasks. This isolation is crucial in maintaining a clean and organized development workspace, as it prevents conflicts between packages used in different projects. Furthermore, virtual environments ensure that projects are reproducible and can be shared with others without compatibility issues, as all the necessary dependencies are clearly defined and contained within the environment.
 
 Managing Python virtual environments can be achieved through various tools, each offering unique features and benefits. The most commonly used tools include:

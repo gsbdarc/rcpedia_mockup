@@ -1,18 +1,3 @@
----
-title: 17. Archiving Project
-layout: indexPages/gettingStarted
-subHeader: Data, Analytics, and Research Computing.
-keywords: yen, policy, archiving, tar, clean up, storage
-category: gettingStarted
-parent: gettingStarted
-section: topic
-order: 17
-updateDate: 2023-08-08
----
-# {{ page.title }}
----
-
-
 ## Why Should I Archive?
 
 When your project is nearing completion and you have finished running computations on the yens, what is left to do is:
@@ -44,7 +29,3 @@ where `-z` flag will compress the files inside `my-project-dir` directory and cr
 
 ### Transferring to Your Archive
 After choosing the long-term storage solution, transfer the tarball into it for the long-term storage and delete the project directory and the tarball off of yens.
-
-
----
-<a href="/gettingStarted/16_documentation.html"><span class="glyphicon glyphicon-menu-left fa-lg" style="float: left;"/></a> <a href="/gettingStarted/18_thankyou.html"><span class="glyphicon glyphicon-menu-right fa-lg" style="float: right;"/></a>

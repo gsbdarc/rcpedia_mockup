@@ -1,17 +1,3 @@
----
-title: How Do I Install Stata on JupyterHub?
-layout: indexPages/faqs
-subHeader: Data, Analytics, and Research Computing.
-keywords: software, Stata, Jupyter
-category: faqs
-parent: faqs
-section: software
-order: 1
-updateDate: 2022-02-24
----
-
-# {{ page.title }}
-
 ## Step 1: Log onto the Yens
 
 ## Step 2: Install Miniconda

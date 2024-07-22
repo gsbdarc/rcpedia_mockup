@@ -1,17 +1,3 @@
----
-title: Slurm Job Array Python Example
-layout: indexPages/topicGuides
-subHeader: Data, Analytics, and Research Computing.
-keywords: slurm, scheduler, yen10, python, job array
-category: topicGuides
-parent: topicGuides
-order: 1
-updateDate: 2020-11-02
----
-
-
-# {{ page.title }}
-
 ## Python Example Slurm Script
 The simplest Python script looks like:
 

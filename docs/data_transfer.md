@@ -1,15 +1,4 @@
----
-title: Globus
-layout: indexPages/services
-subHeader: Data, Analytics, and Research Computing.
-keywords: data, globus
-category: services 
-parent: services
-section: infrastructure  
-order: 1
-updateDate: 2022-08-29
----
-# {{ page.title }}
+# Globus
 
 [Globus](https://www.globus.org/) lets you transfer large amounts of data to the Yens from different endpoints 
 such as your laptop, other institutions or the cloud in a fast and secure manner.
@@ -52,21 +41,8 @@ If installed correctly, you should see your personal Globus endpoint under Colle
 You can now search for your personal endpoint when setting up a file transfer to the yens.
 
 
----
-title: How to transfer files with LFTP
-layout: indexPages/faqs
-subHeader: Data, Analytics, and Research Computing.
-keywords: LFTP, transfer, ftp, sftp
-category: faqs
-parent: faqs
-order: 2
-section: data
-order: 1
-updateDate: 2021-11-23
----
+# LFTP
 
-# {{ page.title }}
----
 ### SSH into the Server
 ```bash
 ssh yen.stanford.edu
@@ -161,19 +137,7 @@ unzip "*.zip"
 ```
 
 
----
-title: How Do I Transfer Data between Yens and AWS?
-layout: indexPages/faqs
-subHeader: Data, Analytics, and Research Computing.
-keywords: AWS, Yen, cloud
-category: faqs
-parent: faqs
-section: data
-order: 1
-updateDate: 2020-04-17
----
-
-# {{ page.title }}
+# How Do I Transfer Data between Yens and AWS?
 
 If you need to use AWS services from the command line, you will need programmatic access to AWS by way of **keys**.  These will be generated for you by the DARC team, and should be thought of as a username and password.  Anyone with these keys will have access to the resources they grant, so we try to limit the privileges a set of keys has, as well as where they will be effective.
 
@@ -219,20 +183,7 @@ aws s3 ls --profile athenacopy
 You can read more about the [s3 API](https://docs.aws.amazon.com/cli/latest/reference/s3/index.html#cli-aws-s3) on the AWS CLI documentation.
 
 
----
-title: Archive Data to Google Drive
-layout: indexPages/faqs
-subHeader: Data, Analytics, and Research Computing.
-keywords: RClone, rclone, transfer, ftp, sftp, archive, google, drive, google drive, gdrive
-category: faqs
-parent: faqs
-order: 2
-section: data
-order: 2
-updateDate: 2021-11-23
----
-# {{ page.title }}
----
+# Archive Data to Google Drive
 
 Archiving your data to Google Drive (GDrive) using RClone is a free, fast, and secure way to free up on-premises storage. Google Drive can be used with high-risk data following Stanford's [Minimum Security Standards](https://uit.stanford.edu/guide/securitystandards). Our ZFS storage solution is finite, measuring roughly one-half petabyte of space, which means that space is limited to researchers in perpetuity.
 
@@ -303,20 +254,8 @@ rclone ls smancusoGoogleDrive:GoogleDriveFolderName
 rclone copy smancusoGoogleDrive:GoogleDriveFolderName /Path/To/Local/Download/Folder
 ```
 
----
-title: 7. Transferring Files to and from Yen Servers 
-layout: indexPages/gettingStarted
-subHeader: Data, Analytics, and Research Computing.
-keywords: yen, yens, linux, command line, file transfer, scp, rsync
-category: gettingStarted
-parent: gettingStarted
-section: topic
-order: 7
-updateDate: 2023-09-18
----
+# Transferring Files to and from Yen Servers
 
-# {{ page.title }}
----
 In the course of your data processing pipeline, you will often need to transfer data to Yen servers for analysis and subsequently move the resulting files back to your local machine.
 
 ## Using `scp` for File Transfers 

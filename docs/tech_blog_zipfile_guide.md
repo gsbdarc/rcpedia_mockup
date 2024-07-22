@@ -1,19 +1,3 @@
----
-title: Working with Large Zip Files in Python
-layout: indexPages/topicGuides
-subHeader: Data, Analytics, and Research Computing.
-keywords: zipfiles, python,
-category: topicGuides
-parent: topicGuides
-order: 1
-updateDate: 2022-10-10
----
-
-
-
-# {{ page.title }}
-
-
 ### How to work with large zip files **without** unzipping them, using the `zipfile` python library
 <br>
 ## Problem
@@ -124,4 +108,3 @@ data.head()
 <br>
 As you can see, with only a few lines of code, we were able to pull any data from this directory of zip files. 
 This allows us to utilize the transitory RAM rather than unzipping the full contents of each file to disk.
-

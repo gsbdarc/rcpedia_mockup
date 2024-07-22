@@ -1,17 +1,3 @@
----
-title: Parallel Processing in R
-layout: indexPages/topicGuides
-subHeader: Data, Analytics, and Research Computing.
-keywords: r, programming
-category: topicGuides
-parent: topicGuides
-order: 1
-updateDate: 2020-03-04
----
-
-
-# {{ page.title }}
-
 ## Tips to being a good citizen
 
 Many parallel packages in R require you to create a "cluster" of workers before doing work in parallel.  If you copy code off the internet, it might look like this:
