@@ -1,14 +1,3 @@
----
-title: Acknowledging Us
-layout: indexPages/services
-keywords: citation, acknowledgement, credit
-category: services 
-parent: services
-section: requests 
-order: 1
-updateDate: 2022-12-20
----
-
 # Acknowledging Us
 
 ## How to cite the Data, Analytics, and Research Computing (DARC) group at the Stanford Graduate School of Business

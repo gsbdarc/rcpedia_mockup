@@ -1,16 +1,5 @@
----
-title: Slurm Job Array R Example
-layout: indexPages/topicGuides
-subHeader: Data, Analytics, and Research Computing.
-keywords: slurm, scheduler, yen-slurm, R, job array
-category: topicGuides
-parent: topicGuides
-order: 1
-updateDate: 2023-04-04
----
 
-
-# {{ page.title }}
+# Slurm Job Array R Example
 
 ## R Example Slurm Script
 The simplest R script looks like:

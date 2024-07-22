@@ -1,4 +1,4 @@
----
+<!-- ---
 title: Migrating Processes From JupyterHub to Yen-Slurm
 layout: indexPages/yen
 subHeader: How to migrate processes
@@ -7,7 +7,7 @@ category: yen
 parent: yen
 order: 6
 updateDate: 2023-12-18
----
+--- -->
 
 # Migrating Processes From JupyterHub to Yen-Slurm
 
