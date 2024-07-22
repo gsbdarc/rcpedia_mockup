@@ -63,9 +63,9 @@ nav:
       - Reproducible Research Essentials: _blog/2024-02-28-reproducibility_tips.md 
       - How do I extract compressed files?: _blog/2023-08-18-how_to_uncompress.md
       - What is a man-in-the-middle warning?: _blog/2020-03-13-man_in_middle.md  
-      - Merging Datasets in Dask: _posts/2023-02-09-merging_data_sets_dask.md
-      - How to use Rclone: _posts/2023-09-18-rclone.md
-      _ Loading Optimization Software: _posts/2024-01-26-optimization_software.md
+      - Merging Datasets in Dask: _blog/2023-02-09-merging_data_sets_dask.md
+      - How to use Rclone: _blog/2023-09-18-rclone.md
+      - Loading Optimization Software: _blog/2024-01-26-optimization_software.md
       
 extra:
   update_date: 2024-06-27
