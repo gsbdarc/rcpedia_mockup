@@ -1,16 +1,6 @@
----
-title: Merging Big Data Sets with Python Dask
-layout: indexPages/topicGuides
-subHeader: Data, Analytics, and Research Computing.
-keywords: Merging, python, dask
-category: topicGuides
-parent: topicGuides
-order: 1
-updateDate: 2023-02-09
----
+<div class="last-updated">Last updated: 2023-02-09</div>
 
-
-# {{ page.title }}
+# Merging Big Data Sets with Python Dask
 
 ## Using `dask` instead of `pandas` to merge large data sets
 

@@ -1,16 +1,5 @@
----
-title: Parallel Processing in Python
-layout: indexPages/topicGuides
-subHeader: Data, Analytics, and Research Computing.
-keywords: parallel, processing, python
-category: topicGuides
-parent: topicGuides
-order: 1
-updateDate: 2021-01-20
----
 
-
-# {{ page.title }}
+# Parallel Processing in Python
 
 ## Common Python Libraries (Numpy, Sklearn, Pytorch, etc...)
 

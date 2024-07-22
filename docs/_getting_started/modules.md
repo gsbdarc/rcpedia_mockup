@@ -1,15 +1,3 @@
----
-title: Yen Software Guide
-layout: _getting_started/modules.md
-subHeader: Comprehensive guide to software on Yen Servers
-keywords: yen, software, cluster, server, R, python, matlab, stata, sas, version
-category: software 
-parent: _getting_started
-section: _getting_started 
-order: 1
-updateDate: 2023-08-22
----
-
 # Software on Yen Servers
 
 ##  Overview
