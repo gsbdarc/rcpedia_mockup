@@ -68,6 +68,3 @@ Download a <a href="https://drive.google.com/file/d/1sBbdrk_UcfX_tfy1jgxBaomwhDW
 or <a href="https://vim-adventures.com" target="_blank">learn vim while playing a game</a>.
 
 Once you get a hang of vi commands, you will have the power to edit files quickly and directly from the command line.
-
----         
-<a href="/training/3_yen_slurm.html"><span class="glyphicon glyphicon-menu-left fa-lg" style="float: left;"/></a> <a href="/training/5_python_env.html"><span class="glyphicon glyphicon-menu-right fa-lg" style="float: right;"/></a>

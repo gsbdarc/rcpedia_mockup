@@ -2,22 +2,24 @@
 If you would like to check your resource usage on the Yens, there are a few tools available.
 
 - `htop` allows you to get an overview of the activity on the whole system that you are logged into. Furthermore, you can inspect your own processes by typing `htop -u <SUNetID>`. A lot more information about how to decipher the information produced with this command can be found on [this page](/yen/community.html).
-- `gsb-watcher` is a tool written by our team that outputs your CPU and memory usage in one-line statements every second. This is especially useful when you are actively monitoring a running script.
 - `topbyuser` is another tool written by us that lists out the active users on the Yen you are logged into and the amount of resources they are currently using.
 
-{% include important.html content="We have [community guidelines](/yen/community.html) to illustrate responsible use of our shared resources that our users are expected to follow. These guidelines ensure that the servers can remain accessible to everyone." %}
+!!! important
+    We have [community guidelines](/yen/community.html) to illustrate responsible use of our shared resources that our users are expected to follow. These guidelines ensure that the servers can remain accessible to everyone.
+
 
 ## Other page
 ##  Monitoring Usage
 ## Monitoring Your Resource Footprint
 
 Certain parts of the GSB research computing infrastructure provide
-environments that are managed by a scheduler (like <a href="/services/sherlock.html" target="_blank">Sherlock</a> or <a href="/yen/scheduler.html" target="_blank">Yen-Slurm</a>). In these cases it is not necessary for individuals to monitor resource usage themselves.
+environments that are managed by a scheduler (like <a href="_policies/services" target="_blank">Sherlock</a> or <a href="/yen/scheduler.html" target="_blank">Yen-Slurm</a>). In these cases it is not necessary for individuals to monitor resource usage themselves.
 
 However, when working on systems like the <a href="/yen/index.html" target="_blank">interactive yens</a> where resources like **CPU**, **RAM**, and **disk space** are _shared_ among many researchers,
  it is important that all users be mindful of how their work impacts the larger community.
 
-{% include tip.html content="When using interactive yens, use the ```htop``` and ```userload``` commands to monitor CPU and RAM usage. Use the ```gsbquota``` command to monitor disk quota." %}
+!!! tip
+    When using interactive yens, use the ```htop``` and ```userload``` commands to monitor CPU and RAM usage. Use the ```gsbquota``` command to monitor disk quota.
 
 ### CPU & RAM
 
@@ -32,8 +34,8 @@ The ```htop``` console looks like this:
 
 ![htop output for well-behaved code](/images/proc_monitoring.png)
 
-
-{% include warning.html content="Note that in certain cases greedy jobs may be terminated automatically to preserve the integrity of the system." %}
+!!! warning
+    Note that in certain cases greedy jobs may be terminated automatically to preserve the integrity of the system. 
 
 The `userload` command will list the total amount of resources (CPU & RAM) all your tasks are consuming on that particular Yen node.
 
@@ -186,7 +188,7 @@ Parallel NPV Calculation (using 8 cores):
 While the program is running, you should see 8 R processes running in the `htop` output because we
 specified 8 cores in our R program and about 8 CPU cores being utilized in `userload` output. The program will run faster since we are using 8 cores instead of 1 but does not get you 8X speedup because of parallelization overhead.
 
-![](/images/intro_to_yens/monitor-2.png)
+![](/images/monitor-2.png)
 
 Last modification we are going to make is to pass the number of cores as a command line argument to our R script.
 Save the following to a new script called `investment-npv-parallel-args.R`.

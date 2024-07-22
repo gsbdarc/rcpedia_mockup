@@ -24,7 +24,8 @@ Pkg.add("IJulia")
 
 Restart your JupyterHub server, and you should see Julia listed as a notebook kernel.
 
-{% include tip.html content="Learn more about JupyterHub on the Yens [here](/yen/webBasedCompute.html)." %}
+!!! tip
+    Learn more about JupyterHub on the Yens [here](/yen/webBasedCompute.html)
 
 ## Optional: Multithreaded Julia kernel
 The steps above install Julia kernel that will use a single core on JupyterHub on the Yens. 
