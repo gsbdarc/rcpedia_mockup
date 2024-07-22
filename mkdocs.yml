@@ -50,9 +50,9 @@ nav:
       - Best Practices -- Monitor Resource Usage: _user_guide/best_practices_monitor_usage.md
       - Best Practices -- GUI: _user_guide/best_practices_gui.md
       - Best Practices -- Julia on Jupyter: _user_guide/best_practices_julia_jupyter.md
-      - Best Practices -- Migrating From JupyterHub: _user_guide/migrating_from_jupyter.md
-      - Best Practices -- Parallel Processing Python: _user_guide/parallel_processing_python.md
-      - Best Practices -- R SLURM Job Array: _user_guide/R_slurm_job_array
+      - Best Practices -- Migrating From JupyterHub: _user_guide/best_practices_migrating_from_jupyter.md
+      - Best Practices -- Parallel Processing Python: _user_guide/best_practices_parallel_processing_python.md
+      - Best Practices -- R SLURM Job Array: _user_guide/best_practices_R_slurm_job_array.md
       
   - Tech Blog:
       - Optimization Software: _blog/2024-01-26-optimization_software.md 
