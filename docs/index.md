@@ -14,8 +14,12 @@ Ain't it sexy?
         frameborder="0" onmousewheel="" width="100%" height="500"
         style="background: transparent; border: 1px solid #ccc;"></iframe>
 
+
+## Blog
+
 ## Recent Changes
 This whole dang website is brand spankin' new.
+
 
 ## About Us
 RCpedia is written and maintained by the Research Hub [DARC (Data, Analytics, and Research Computing) group](https://www.gsb.stanford.edu/faculty-research/darc). In addition to supporting research computing, the DARC team engages directly with faculty members preparing large-scale datasets, assisting with data analysis, and consulting on research design.
