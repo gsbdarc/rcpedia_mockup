@@ -46,6 +46,7 @@ nav:
       - Services: _policies/services.md
       - Acknowledgements: _policies/acknowledgements.md
       - User Limits: _policies/user_limits.md
+      - Human Subjects Research: _policies/humanSubjectsResearch.md
   - User Guide: 
       - Best Practices -- Julia SLURM Job Arrays: _user_guide/best_practices_julia_jobarray.md
       - Best Practices -- Monitor Resource Usage: _user_guide/best_practices_monitor_usage.md
@@ -77,6 +78,8 @@ nav:
       - Working with Large Zip Files in Python: _blog/2022-10-10_zipfile_guide.md
       - How Do I Install Stata on JupyterHub?: _blog/2022-02-24-install-stata-on-jupyter.md 
       - How Do I Access SEC Documents?: _blog/2021-09-22-how_access_SEC.md 
+      - Train BERT model on Yen GPU's: _blog/2024-03-28-finBERT.md 
+      - Installing Software on the Yens: _blog/2022-11-14_installing_software.md 
       
 extra:
   update_date: 2024-06-27
