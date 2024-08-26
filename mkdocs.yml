@@ -40,6 +40,7 @@ nav:
       - Yen Servers: _getting_started/yen-servers.md
       - Access the Yens: _getting_started/how_access_yens.md
       - Modules: _getting_started/modules.md
+      - Jupyter: _getting_started/jupyter.md
   - Policies: 
       - Collaborators: _policies/collaborators.md
       - Workgroups: _policies/workgroups.md
@@ -47,6 +48,9 @@ nav:
       - Acknowledgements: _policies/acknowledgements.md
       - User Limits: _policies/user_limits.md
       - Human Subjects Research: _policies/humanSubjectsResearch.md
+      - Leaving GSB: _policies/leavingGSB.md
+      - Security: _policies/security.md
+      - Sherlock: _policies/sherlock.md
   - User Guide: 
       - Best Practices -- Julia SLURM Job Arrays: _user_guide/best_practices_julia_jobarray.md
       - Best Practices -- Monitor Resource Usage: _user_guide/best_practices_monitor_usage.md
@@ -80,7 +84,8 @@ nav:
       - How Do I Access SEC Documents?: _blog/2021-09-22-how_access_SEC.md 
       - Train BERT model on Yen GPU's: _blog/2024-03-28-finBERT.md 
       - Installing Software on the Yens: _blog/2022-11-14_installing_software.md 
-      
+      - Using Twarc Python Package to Scrape Twitter: _blog/2023-08-08-using_twarc.md
+      - How do I export my R environment to JupyterHub?: _blog/2023-08-23-howRenvJupyterKernel.md
 extra:
   update_date: 2024-06-27
 
