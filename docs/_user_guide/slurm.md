@@ -382,7 +382,3 @@ python investment-npv-serial.py
 ``` 
 
 In the above slurm script, we first activate `venv` environment and execute the python script using `python` in the active environment.
-
----         
-<a href="/training/6_jupyter_hub.html"><span class="glyphicon glyphicon-menu-left fa-lg" style="float: left;"/></a> <a href="/training/8_parallel_jobs.html"><span class="glyphicon glyphicon-menu-right fa-lg" style="float: right;"/></a>
-
