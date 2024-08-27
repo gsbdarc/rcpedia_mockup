@@ -2,7 +2,7 @@ site_name: GSB RC Site 2024
 site_url: https://rcpedia-dev.stanford.edu
 theme:
   name: material
-  custom_dir: docs/assets
+  custom_dir: overrides
   features:
     - announce.dismiss
     - header.autohide
@@ -100,7 +100,7 @@ extra:
   update_date: 2024-08-26
 
 extra_css:
-  - assets/css/index.css
-  - assets/css/sh.css
-  - assets/css/fonts.css
-  - css/custom.css
+  - stylesheets/sh.css
+  - stylesheets/output.css # This is the decantur css tailing output
+
+
