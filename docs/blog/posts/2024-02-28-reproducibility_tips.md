@@ -1,6 +1,9 @@
 ---
 date:
   created: 2024-02-28
+categories:
+    - Reproducibility
+    - Research
 ---
 # Reproducible Research Essentials
 

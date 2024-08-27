@@ -8,6 +8,7 @@ theme:
     - header.autohide
     - content.code.annotate
     - navigation.indexes
+    #- toc.integrate
     - navigation.sections
     - navigation.tabs
     - navigation.tabs.sticky
@@ -79,8 +80,8 @@ nav:
           - Data Transfer: _user_guide/data_transfer.md
   - Blog:
       - blog/index.md
-      # - SEC Filings: blog/posts/2023-05-16-EDGARmirror.md
       # - Run on GPU: blog/posts/2024-03-28-run-gpu.md
+      # - SEC Filings: blog/posts/2023-05-16-EDGARmirror.md
       # - Edit Files on Command Line: blog/posts/2023-09-20-edit-files-with-vim.md
       # - Run Jobs on Yen's GPU Node: blog/posts/2024-04-25-yen_gpu.md
       # - Reproducible Research Essentials: blog/posts/2024-02-28-reproducibility_tips.md 

@@ -23,4 +23,4 @@ If you would like to add a "Read More" link to your blog post, you can add the f
 ```markdown
 <!-- more -->
 ```
-
+Note: All ordering will be handle by the date field in the header. Mkdocs material will automatically sort the blog posts by date as long as they are in the posts directory.
