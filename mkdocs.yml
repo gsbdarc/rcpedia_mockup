@@ -3,6 +3,7 @@ site_url: https://rcpedia-dev.stanford.edu
 theme:
   name: material
   custom_dir: overrides
+  logo: assets/images/gsb-logo.png
   features:
     - announce.dismiss
     - header.autohide
@@ -102,5 +103,5 @@ extra:
 extra_css:
   - stylesheets/sh.css
   - stylesheets/output.css # This is the decantur css tailing output
-
+  - stylesheets/custom.css
 

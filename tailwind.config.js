@@ -5,8 +5,10 @@ module.exports = {
     require('decanter')
   ],
   theme: {
-    extend: {},
-  },
+    extend: {
+      fontFamily: {
+        'sans': ['Source Sans Pro', 'sans-serif'],
+      }
+    }  },
   plugins: [],
 }
-

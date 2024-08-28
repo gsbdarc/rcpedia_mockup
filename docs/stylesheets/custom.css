@@ -1,0 +1,4 @@
+.md-header-nav__button img {
+    height: 100px;  /* Adjust based on your desired logo size */
+    width: auto;   /* Maintain aspect ratio */
+}
