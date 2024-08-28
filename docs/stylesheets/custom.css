@@ -2,3 +2,11 @@
     height: 100px;  /* Adjust based on your desired logo size */
     width: auto;   /* Maintain aspect ratio */
 }
+.md-header__button.md-logo {
+    margin: 0;
+    padding: 0;
+}
+.md-header__button.md-logo img, .md-header__button.md-logo svg {
+    height: auto;
+    width: 10rem;
+}
