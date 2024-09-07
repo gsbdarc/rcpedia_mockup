@@ -7,6 +7,8 @@ theme:
     - announce.dismiss
     - header.autohide
     - content.code.annotate
+    - content.code.select
+    - content.code.copy
     - navigation.indexes
     - navigation.sections
     - navigation.tabs
@@ -30,6 +32,8 @@ markdown_extensions:
   - toc
   - admonition
   - pymdownx.details
+  - attr_list
+  - md_in_html
   - pymdownx.superfences
   - admonition
   - pymdownx.details
@@ -44,7 +48,6 @@ nav:
   - Policies: 
       - User Limits: _policies/user_limits.md
       - Services: _policies/services.md
-      - Sherlock: _policies/sherlock.md
       - Collaborators: _policies/collaborators.md
       - Workgroups: _policies/workgroups.md
       - Security: _policies/security.md
@@ -80,6 +83,8 @@ nav:
       - Data:
           - Storage: _user_guide/storage.md
           - Data Transfer: _user_guide/data_transfer.md
+      - External Resources:
+          - Sherlock: _policies/sherlock.md
   - Tech Blog:
       - SEC Filings: _blog/2023-05-16-EDGARmirror.md
       - Run on GPU: _blog/2024-03-28-run-gpu.md
