@@ -5,7 +5,7 @@ theme:
   custom_dir: overrides
   logo: assets/images/gsb-logo.png
   features:
-    - announce.dismiss
+    # - announce.dismiss
     - header.autohide
     - content.code.annotate
     - navigation.indexes

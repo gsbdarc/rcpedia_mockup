@@ -10,3 +10,7 @@
     height: auto;
     width: 10rem;
 }
+.md-banner {
+    background-color: #8C1515; /* Set your desired color */
+    color: #ffffff; /* Adjust text color if needed */
+}
