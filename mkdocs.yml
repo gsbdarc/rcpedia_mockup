@@ -106,4 +106,5 @@ extra_css:
   - stylesheets/sh.css
   - stylesheets/output.css # This is the decantur css tailing output
   - stylesheets/custom.css
+  - stylesheets/base.css
 
