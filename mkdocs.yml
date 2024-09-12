@@ -9,7 +9,9 @@ theme:
     - header.autohide
     - content.code.annotate
     - navigation.indexes
-    #- toc.integrate
+    - content.code.select
+    - content.code.copy
+   # - toc.integrate
     - navigation.sections
     - navigation.tabs
     - navigation.tabs.sticky
@@ -22,11 +24,26 @@ theme:
     code: Roboto Mono
 
 plugins:
-  - blog:
-      pagination: false 
-      blog_toc: false
   - search
-  - git-revision-date-localized
+  - blog:
+      blog_toc: false
+  - meta
+  - tags:
+      listings_toc: false
+ 
+  # CI=1 mkdocs build
+  - group:
+      enabled: !ENV CI
+      plugins:
+        - git-revision-date-localized
+
+  # INSIDERS=1 mkdocs build
+  - group:
+      enabled: !ENV INSIDERS
+      plugins:
+        - privacy
+        - optimize:
+            optimize_png: false
 
 markdown_extensions:
   - codehilite
@@ -35,10 +52,14 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - admonition
-  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+
 
 nav:
-  - Home: index.md
+  - Home: index.mdpip install Pygments
   - Getting Started: 
       - Yen Servers: _getting_started/yen-servers.md
       - Access the Yens: _getting_started/how_access_yens.md
@@ -81,22 +102,22 @@ nav:
           - Data Transfer: _user_guide/data_transfer.md
   - Blog:
       - blog/index.md
-      - Run Jobs on Yen's GPU Node: blog/posts/2024-04-25-yen_gpu.md
-      - Train BERT model on Yen GPU's: blog/posts/2024-03-28-finBERT.md 
-      - Run on GPU: blog/posts/2024-03-28-run-gpu.md
-      - Reproducible Research Essentials: blog/posts/2024-02-28-reproducibility_tips.md 
-      - Edit Files on Command Line: blog/posts/2023-09-20-edit-files-with-vim.md
-      - How to use Rclone: blog/posts/2023-09-18-rclone.md
-      - How do I export my R environment to JupyterHub?: blog/posts/2023-08-23-howRenvJupyterKernel.md
-      - How do I extract compressed files?: blog/posts/2023-08-18-how_to_uncompress.md
-      - Using Twarc Python Package to Scrape Twitter: blog/posts/2023-08-08-using_twarc.md
-      - SEC Filings: blog/posts/2023-05-16-EDGARmirror.md
-      - Merging Datasets in Dask: blog/posts/2023-02-09-merging_data_sets_dask.md
-      - Installing Software on the Yens: blog/posts/2022-11-14_installing_software.md
-      - Working with Large Zip Files in Python: blog/posts/2022-10-10_zipfile_guide.md
-      - How Do I Access SEC Documents?: blog/posts/2021-09-22-how_access_SEC.md 
-      - How Do I Install Stata on JupyterHub?: blog/posts/2022-02-24-install-stata-on-jupyter.md
-      - What is a man-in-the-middle warning?: blog/posts/2020-03-13-man_in_middle.md
+      # - Run Jobs on Yen's GPU Node: blog/posts/2024-04-25-yen_gpu.md
+      # - Train BERT model on Yen GPU's: blog/posts/2024-03-28-finBERT.md 
+      # - Run on GPU: blog/posts/2024-03-28-run-gpu.md
+      # - Reproducible Research Essentials: blog/posts/2024-02-28-reproducibility_tips.md 
+      # - Edit Files on Command Line: blog/posts/2023-09-20-edit-files-with-vim.md
+      # - How to use Rclone: blog/posts/2023-09-18-rclone.md
+      # - How do I export my R environment to JupyterHub?: blog/posts/2023-08-23-howRenvJupyterKernel.md
+      # - How do I extract compressed files?: blog/posts/2023-08-18-how_to_uncompress.md
+      # - Using Twarc Python Package to Scrape Twitter: blog/posts/2023-08-08-using_twarc.md
+      # - SEC Filings: blog/posts/2023-05-16-EDGARmirror.md
+      # - Merging Datasets in Dask: blog/posts/2023-02-09-merging_data_sets_dask.md
+      # - Installing Software on the Yens: blog/posts/2022-11-14_installing_software.md
+      # - Working with Large Zip Files in Python: blog/posts/2022-10-10_zipfile_guide.md
+      # - How Do I Access SEC Documents?: blog/posts/2021-09-22-how_access_SEC.md 
+      # - How Do I Install Stata on JupyterHub?: blog/posts/2022-02-24-install-stata-on-jupyter.md
+      # - What is a man-in-the-middle warning?: blog/posts/2020-03-13-man_in_middle.md
 
 
 extra:

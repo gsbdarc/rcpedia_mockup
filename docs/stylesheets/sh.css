@@ -3,10 +3,10 @@
 
 /* theme color schemes */
 :root {
-  --md-primary-fg-color:               #8c1515;
-  --md-primary-fg-color--light:        #b1040e;
+  --md-primary-fg-color:               hwb(0 9% 69%);
+  --md-primary-fg-color--light:        #b1040d86;
   --md-primary-fg-color--dark:         #820000;
-  --md-accent-fg-color:                #b1040e;
+  --md-accent-fg-color:                #b1040d9e;
   --md-accent-fg-color--transparent:   #b1040e0a;
 }
 

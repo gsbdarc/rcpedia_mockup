@@ -1,6 +1,11 @@
 ---
 date:
   created: 2023-08-08
+pin: true
+links:
+    - External link: https://google.com
+
+ 
 ---
 
 

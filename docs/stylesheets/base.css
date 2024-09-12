@@ -1,4 +1,4 @@
-.su-local-footer {
+/* .su-local-footer {
     background-color: #f4f4f4;
 }
 
@@ -22,7 +22,7 @@
 .su-link, a {
     color: #006cb8;
     font-weight: 200;
-}
+} 
 .su-lockup__line1, .su-lockup__line2, .su-lockup__line3, .su-lockup__line4, .su-lockup__line5 {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -92,4 +92,4 @@
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: "A B B C";
     grid-template-columns: 1fr 1fr 1fr 1fr;
-}
+} */
