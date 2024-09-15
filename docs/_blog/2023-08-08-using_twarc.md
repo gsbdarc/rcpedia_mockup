@@ -1,4 +1,13 @@
 ---
+date:
+  created: 2023-08-08
+categories:
+    - Scraping
+    - Twitter
+    - Python
+---
+<!--
+---
 title: Using Twarc python package to scrape Twitter
 layout: indexPages/topicGuides
 subHeader: Data, Analytics, and Research Computing.
@@ -8,16 +17,17 @@ parent: topicGuides
 order: 1
 updateDate: 2023-08-08
 ---
+-->
 
 # Using Twarc python package to scrape Twitter
 
-In this topic guide, we discuss how to get started with the [`twarc`](https://github.com/DocNow/twarc) python package to scrape Twitter.
+In this blog, we discuss how to get started with the [`twarc`](https://github.com/DocNow/twarc) python package to scrape Twitter.
 
 ## Installing `Twarc` package
 We will use a `conda` to install all the python packages into. 
 That way we can make it into the kernel on JupyterHub and use the same environmnet on interactive yens, 
-[`yen-slurm`](/training/3_yen_slurm.html) or 
-[JupyterHub](/training/6_jupyter_hub.html).
+[`yen-slurm`](/_user_guide/slurm/) or 
+[JupyterHub](/_getting_started/jupyter/).
 
 ```
 $ ml anaconda3
@@ -58,7 +68,7 @@ for your kernel to go into the `--name` argument.
 $ python -m ipykernel install --user --name=twitter
 ```
 
-Start up [Jupyter](/yen/webBasedCompute.html) on any of the interactive yens (yen[1-5]) and you should now see a new
+Start up [Jupyter](/_getting_started/jupyter/) on any of the interactive yens (yen[1-5]) and you should now see a new
 kernel in the Launcher menu under Notebooks. Start a new notebook with that kernel.
 
 ![](/images/twitter_kernel.png)

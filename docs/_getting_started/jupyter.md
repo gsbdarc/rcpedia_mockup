@@ -1,4 +1,10 @@
 ---
+date:
+  created: 2024-09-14
+categories:
+    - Getting Started
+---
+<!--
 title: Web-based Computing
 layout: indexPages/yen
 subHeader: How to of web-based computing
@@ -8,10 +14,11 @@ parent: yen
 order: 5
 updateDate: 2020-02-13
 ---
+-->
 
 # Web-based Computing
 
-Web-based computing is now available on the Yen servers with [JupyterHub!](https://jupyterhub.readthedocs.io/en/stable/).  JupyterHub is a platform designed to allow multiple users to launch their own Jupyter notebook servers on a shared system with minimal user effort. Our implementation of JupyterHub currently features several language kernels including Python 3, R, and SAS.
+Web-based computing is now available on the Yen servers with [JupyterHub](https://jupyterhub.readthedocs.io/en/stable/)!  JupyterHub is a platform designed to allow multiple users to launch their own Jupyter notebook servers on a shared system with minimal user effort. Our implementation of JupyterHub currently features several language kernels including Python 3, R, and SAS.
 
 ## Getting Started
 
@@ -27,9 +34,11 @@ You will need to login with your SUNet credentials, and then `Launch Server`. Fr
 
 If you are a non-GSB collaborator and don't have a SUNet, you must request full sponsorship to access Jupyter. You can learn more about SUNet ID sponsorship [here](https://uit.stanford.edu/service/sponsorship).
 
-{% include important.html content="JupyterHub instances on each `yen` server are independent of each other! If you launch a server on `yen2`, it will only use resources available on `yen2`" %}
+!!! important
+    JupyterHub instances on each `yen` server are independent of each other! If you launch a server on `yen2`, it will only use resources available on `yen2`
 
-{% include warning.html content="JupyterHub does not work well on Safari - we recommend using a different browser" %}
+!!! warning
+    JupyterHub does not work well on Safari - we recommend using a different browser
 
 
 ## Features of JupyterHub
@@ -37,7 +46,7 @@ If you are a non-GSB collaborator and don't have a SUNet, you must request full 
 We recommend taking a look at the [official documentation](https://jupyter-notebook.readthedocs.io) for JupyterHub if you have any questions on the features below!
 
 ### Notebooks
--------------
+-----------
 ![](/images/jupyter_notebooks.png "Notebooks")
 
 Notebooks allow you to write code and execute it within a web browser.  Code is written into cells, which can be run in any order, on demand.  You can also include text, images, and plots to make your code read like a lab notebook.  As of March 2020, the above coding languages are supported. Contact the [DARC team](mailto:gsb_darcresearch@stanford.edu) if you have a language you would like installed
@@ -65,7 +74,7 @@ There are a few preliminary steps that need to be taken before SAS can be used o
 ### I don't see Julia on my JupyterHub!
 ---------------------------------------
 
-See our [FAQ page](/faqs/installJuliaOnJupyter.html) on how to install it!
+See our [User Guide](/_user_guide/best_practices_julia_jupyter/) on how to install it!
 
 
 ### Consoles and Terminal
@@ -88,6 +97,19 @@ One very useful feature of JupyterHub is the ability to upload and download file
 
 To download, right click the file you would like, and click "Download".
 
+
+### Text File Editor
+-------------------------
+![](/images/editor.png)
+
+Finally, you can also edit text files like R scripts directly on JupyterHub. Clicking on Text File icon will open a new file that you can edit. Similarly, clicking on Python File will create an empty `.py` file and clicking on R File will create an empty `.r` file.
+You can also navigate to a directory that has the scripts you want to edit and double click on the script name to open it up in the Text Editor.
+
+For example, try to navigate to `intro_yens_sep_2023` folder in file brower first then double click on `investment-npv-parallel.R` file to open it in the text editor:
+![](/images/edit-r-script.png)
+
+
+
 ## Technical Details
 
 ### File Access and Storage
@@ -105,13 +127,14 @@ The following limits will be imposed on JupyterHub servers:
 <iframe class="airtable-embed" src="https://airtable.com/embed/shrGC2dYzvDSgJfXa?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
 JupyterHub instance will shut down after 3 hours idle (no notebooks actively running code).
 
-{% include warning.html content="Idle servers shut down will not retain any local packages or variables in the notebooks.  Please save your output" %}
+!!! warning
+    Idle servers shut down will not retain any local packages or variables in the notebooks.  Please save your output
 
-If your processes require more than these limits, reach out to the [DARC team](/services/researchSupportRequest.html) for support.
+If your processes require more than these limits, reach out to the [DARC team](/_policies/services/) for support.
 
 <!--
 ---
-title: 6. Custom JupyterHub Python Kernel 
+#title: 6. Custom JupyterHub Python Kernel 
 layout: indexPages/training
 subHeader: Data, Analytics, and Research Computing. 
 keywords: yen, jupyterhub, python, kernel, cluster, server
@@ -123,7 +146,9 @@ updateDate: 2023-12-18
 ---
 -->
 
-# Custom JupyterHub Python Kernel
+
+## Custom JupyterHub Python Kernel
+------------
 To make an active `venv` into a kernel in your JupyterHub, make sure you have an active `venv`:
 
 ```bash
@@ -190,10 +215,10 @@ $ jupyter kernelspec uninstall <kernel-name>
 where `<kernel-name>` is the name of the kernel you want to uninstall.
 
 
+<!--
 ---         
 <a href="/training/5_python_env.html"><span class="glyphicon glyphicon-menu-left fa-lg" style="float: left;"/></a> <a href="/training/7_run_first_job.html"><span class="glyphicon glyphicon-menu-right fa-lg" style="float: right;"/></a>
 
-<!--
 ---
 title: How Do I Run a Jupyter Notebook on the Yens?
 layout: indexPages/faqs
@@ -207,8 +232,9 @@ updateDate: 2020-03-18
 ---
 -->
 
-# How Do I Run a Jupyter Notebook on the Yens?
-
+<!--
+## How Do I Run a Jupyter Notebook on the Yens?
+------------
 The best and easiest way to run Jupyter notebooks on the Yens is through [JupyterHub](https://jupyterhub.readthedocs.io/en/stable/), which is set up on each individual Yen server. Please transition any past implementations of notebooks that you had on the Yens to this platform, which will be more stable and regularly maintained.
 
 Find out more details about JupyterHub on the Yens [here](/yen/webBasedCompute.html).
@@ -353,3 +379,4 @@ For example, navigate to `intro_yens_sep_2023` folder in file brower first then 
 
 ---
 <a href="/gettingStarted/7_transfer_files.html"><span class="glyphicon glyphicon-menu-left fa-lg" style="float: left;"/></a> <a href="/gettingStarted/9_run_jobs.html"><span class="glyphicon glyphicon-menu-right fa-lg" style="float: right;"/></a>
+-->
