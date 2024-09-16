@@ -46,7 +46,7 @@ Each task in a job array will run the same R script and print 'Hello!' and the j
 We are going to pass a job array task ID as a command line argument to the R script. The R script accepts the 
 command line argument and prints 'Hello!' and the task ID passed to it. 
 
-Let's modify our hello world R script to look like:
+Let's modify our hello world R script to look like below  (save this to `hello-parallel.R`):
 
 ```R
 #!/usr/bin/env Rscript

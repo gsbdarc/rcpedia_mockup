@@ -1,7 +1,5 @@
 We have licensed and installed optimization software on the Yens that the GSB researchers can use including 
-<a href="https://www.gurobi.com" target="_blank">Gurobi</a>, <a href="https://www.artelys.com/solvers/knitro" target="_blank">Knitro</a> and <a href="https://ampl.com" target="_blank">AMPL</a>. 
-In this guide, we will show how to 
-use the licensed optimization software interactively on the Yens, in Jupyter notebooks and in Slurm. 
+[Gurobi](https://www.gurobi.com){:target="_blank"}, [Knitro](https://www.artelys.com/solvers/knitro){:target="_blank"} and [AMPL](https://ampl.com){:target="_blank"}. In this guide, we will show how to use the licensed optimization software interactively on the Yens, in Jupyter notebooks and in Slurm. 
 
 ## Software Overview
 - **Gurobi** is a state-of-the-art mathematical optimization solver that delivers high-performance solutions for linear programming (LP), mixed-integer linear programming (MILP), quadratic programming (QP), mixed-integer quadratic programming (MIQP), and other related problems. Known for its robustness and speed, Gurobi is designed to efficiently solve large-scale optimization problems.
@@ -16,7 +14,7 @@ nonlinear optimization problems. It is designed to express complex problems with
 ### Running Gurobi in Python
 
 Because the Yens already have Gurobi software and Gurobi Python interface installed, we simply need to access them
-by loading the `gurobipy3` <a href="/gettingStarted/5_yen_software.html" target="_blank">module</a>.
+by loading the `gurobipy3` [module](/_getting_started/modules/){:target="_blank"}.
  
 **Environment Setup**
 
@@ -25,7 +23,7 @@ Load Gurobi module:
 $ ml gurobipy3
 ```
 
-Next, create a new <a href="/topicGuides/pythonEnv.html" target="_blank">Python virtual environment</a> using `venv` package. 
+Next, create a new [Python virtual environment](/_user_guide/best_practices_python_env/){:target="_blank"} using `venv` package. 
 This virtual environment will be used across interactive Yen nodes, Slurm nodes, and as a Jupyter kernel.
 
 To make the virtual environment sharable, we make it in a shared location on the Yens such as a faculty project directory, and not in a user’s home directory.
@@ -53,14 +51,14 @@ You should see `(opt):` prepended to the prompt:
 (opt): $
 ```
 
-Finally, install required python packages with `pip` (this step will take awhile):
+Finally, install required Python packages with `pip` (this step will take awhile):
 
 ```bash
 (opt) $ pip install numpy pandas ipykernel threadpoolctl scipy gurobipy
 ```
 
 The `ipykernel` module is needed to turn this virtual environment into a Jupyter kernel at a later step,
-the `threadpoolctl` and `scipy` packages are used in the example, and <a href="https://pypi.org/project/gurobipy/" target="_blank">`gurobipy`</a> is a Python interface to Gurobi. 
+the `threadpoolctl` and `scipy` packages are used in the example, and [`gurobipy`](https://pypi.org/project/gurobipy/){:target="_blank"} is a Python interface to Gurobi. 
 
 After the packages are installed, start the Python REPL by typing `python`:
 ```bash
@@ -107,7 +105,7 @@ List loaded modules:
 ```bash
 $ ml 
 Currently Loaded Modules:
-  1) gurobi/10.0.0   2) rstudio/2022.07.2+576   3) R/4.2.1
+  1) gurobi/10.0.0   2) rstudio/2022.07.2+576   3) R/4.3.0
 ```
 
 Launch interactive R:
@@ -120,15 +118,13 @@ Then you can load the `gurobi` R package:
 ```R
 R
 
-R version 4.2.1 (2022-06-23) -- "Funny-Looking Kid"
-Copyright (C) 2022 The R Foundation for Statistical Computing
+R version 4.3.0 (2023-04-21) -- "Already Tomorrow"
+Copyright (C) 2023 The R Foundation for Statistical Computing
 Platform: x86_64-pc-linux-gnu (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
 You are welcome to redistribute it under certain conditions.
 Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
 
 R is a collaborative project with many contributors.
 Type 'contributors()' for more information and
@@ -136,7 +132,10 @@ Type 'contributors()' for more information and
 
 Type 'demo()' for some demos, 'help()' for on-line help, or
 'help.start()' for an HTML browser interface to help.
+
 Type 'q()' to quit R.
+
+
 
 > library('gurobi')
 Loading required package: slam
@@ -145,8 +144,9 @@ Loading required package: slam
 
 You can now run the R scripts to solve the optimization problem using Gurobi on interactive Yen nodes.
 
-**Important:** You need to load the `gurobi` and `R` modules every time you login to the Yens
-before running the interactive R scripts that use `gurobi` R package.
+!!!Important
+    You need to load the `gurobi` and `R` modules every time you login to the Yens
+    before running the interactive R scripts that use `gurobi` R package.
 
 Note, that if you want to use an older Gurobi version, you will need to install `gurobi` R package to your user
 R library. 
@@ -177,8 +177,7 @@ Quit R. You can now run the R scripts to solve the optimization problem using Gu
 #### AMPL with Knitro Solver
 ### Running AMPL with Knitro Solver in Python
 
-Because the Yens already have Knitro and AMPL software installed, we simply need to load the appropriate
-<a href="/gettingStarted/5_yen_software.html" target="_blank">modules</a>.
+Because the Yens already have Knitro and AMPL software installed, we simply need to load the appropriate [modules](/_getting_started/modules/){:target="_blank"}.
  
 **Environment Setup**
 
@@ -191,7 +190,7 @@ You can check currently loaded modules with:
 ```
 $ ml
 Currently Loaded Modules:
-  1) ampl/20231031   2) knitro/12.1.1
+  1) ampl/20231031   2) knitro/14.0.0
 ```
 
 You can get details about a specific module with:
@@ -202,25 +201,25 @@ $ ml show knitro
 which shows you useful details about `PATH` modifications when the module is loaded:
 
 ```
-----------------------------------------------------------------------------------------------------------------------------------------------------
-   /software/modules/Core/knitro/12.1.1.lua:
-----------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
+   /software/modules/Core/knitro/14.0.0.lua:
+---------------------------------------------------------------------------------------------------------------------
 whatis("Name:        knitro")
-whatis("Version:     12.1.1")
+whatis("Version:     14.0.0")
 whatis("Category:    math, optimization")
 whatis("URL:         https://www.artelys.com/en/optimization-tools/knitro")
 whatis("Description: Artelys Knitro is an optimization solver for difficult large-scale nonlinear problems.")
-pushenv("KNITRODIR","/software/non-free/knitro-12.1.1/knitro-12.1.1-Linux-64")
-pushenv("ARTELYS_LICENSE_NETWORK_ADDR","license4.stanford.edu")
-prepend_path("PATH","/software/non-free/knitro-12.1.1/knitro-12.1.1-Linux-64/knitroampl")
-prepend_path("LIBRARY_PATH","/software/non-free/knitro-12.1.1/knitro-12.1.1-Linux-64/lib")
-prepend_path("LD_LIBRARY_PATH","/software/non-free/knitro-12.1.1/knitro-12.1.1-Linux-64/lib")
-prepend_path("CPATH","/software/non-free/knitro-12.1.1/knitro-12.1.1-Linux-64/include")
-prepend_path("MATLABPATH","/software/non-free/knitro-12.1.1/knitro-12.1.1-Linux-64/knitromatlab")
-prepend_path("PYTHONPATH","/software/non-free/knitro-12.1.1/knitro-12.1.1-Linux-64/examples/Python")
+pushenv("KNITRODIR","/software/non-free/knitro/14.0.0")
+pushenv("ARTELYS_LICENSE_NETWORK_ADDR","srcc-license-srcf.stanford.edu")
+prepend_path("PATH","/software/non-free/knitro/14.0.0/knitroampl")
+prepend_path("LIBRARY_PATH","/software/non-free/knitro/14.0.0/lib")
+prepend_path("LD_LIBRARY_PATH","/software/non-free/knitro/14.0.0/lib")
+prepend_path("CPATH","/software/non-free/knitro/14.0.0/include")
+prepend_path("MATLABPATH","/software/non-free/knitro/14.0.0/knitromatlab")
+prepend_path("PYTHONPATH","/software/non-free/knitro/14.0.0/examples/Python")
 ```
 
-Next, create a new <a href="/topicGuides/pythonEnv.html" target="_blank">Python virtual environment</a> using `venv` package. 
+Next, create a new [Python virtual environment](/_user_guide/best_practices_python_env/){:target="_blank"}. using `venv` package. 
 This virtual environment will be used across interactive Yen nodes, Slurm nodes, and as a Jupyter kernel.
 
 To make the virtual environment sharable, we make it in a shared location on the Yens such as a faculty project directory, and not in a user’s home directory.
@@ -310,15 +309,16 @@ We point to the AMPL floating network license with `AMPL(Environment("/software/
 The `ampl.eval()` call should indicate that we have checked out the license:
 
 ```
-option version 'AMPL Version 20231031 (Linux-5.15.0-1052-azure, 64-bit)\
+option version 'AMPL Development Version 20231213 (Linux-5.15.0-1052-azure, 64-bit)\
 Licensed to Stanford University, Natalya Rapstine <nrapstin@stanford.edu> (srcc-license-srcf).\
 Temporary license expires 20250131.\
 Using license file "/software/non-free/ampl/20231031/ampl.lic".\
 ';
 ```
 
-**Note**: To ensure that the AMPL instance is always properly released (even in cases of errors or exceptions), 
-we must properly close `ampl` instance. The `try` and `finally` logic does that in which we release the AMPL license with `ampl.close()` call. 
+!!!Note
+    To ensure that the AMPL instance is always properly released (even in cases of errors or exceptions), 
+    we must properly close `ampl` instance. The `try` and `finally` logic does that in which we release the AMPL license with `ampl.close()` call. 
 
 We also point to the Yen's Knitro licence with `ampl.setOption()` call.
 
@@ -349,8 +349,9 @@ $ module purge
 The environment is now set up to run your Python scripts that use AMPL and Knitro on the interactive Yen nodes.
 Remember that the `module load` command and virtual environment activation is only active in the current shell.
 
-**Important:** You need to load the `ampl` and `knitro` modules and activate your `venv` environment every time you log in to the Yens
-before running the interactive Python scripts that use AMPL and Knitro. 
+!!!Important
+    You need to load the `ampl` and `knitro` modules and activate your `venv` environment every time you log in to the Yens
+    before running the interactive Python scripts that use AMPL and Knitro. 
 
 
 ## Integrating with Jupyter Notebooks
@@ -397,7 +398,7 @@ To remove a kernel, run:
 where `<kernel-name>` is the name of the kernel you want to uninstall from JupyterHub.
 
 
-On <a href="/gettingStarted/8_jupyterhub.html" target="_blank">JupyterHub</a>, launch the new `gurobipy` kernel 
+On [JupyterHub](/_getting_started/jupyter/){:target="_blank"}, launch the new `gurobipy` kernel 
 and test the package imports.
 
 
@@ -457,15 +458,15 @@ You can then make that active virtual environment into a new Jupyter kernel comb
 --env PYTHONPATH '/software/non-free/knitro-12.1.1/knitro-12.1.1-Linux-64/examples/Python:${PYTHONPATH}'
 ```
 
-On <a href="/gettingStarted/8_jupyterhub.html" target="_blank">JupyterHub</a>, launch the new `opt` kernel 
+On [JupyterHub](/_getting_started/jupyter/){:target="_blank"}, launch the new `opt` kernel 
 and test the package imports for `amplpy`, `gurobipy` and all other previous imports.
 
-**Note**: If already have a Jupyter kernel named `opt`, choose a different name for the combined Gurobi, AMPL and Knitro kernel. Otherwise, the `opt` kernel will be overwritten to reference the latest kernel install from the active environment.
+!!!Note
+    If you already have a Jupyter kernel named `opt`, choose a different name for the combined Gurobi, AMPL and Knitro kernel. Otherwise, the `opt` kernel will be overwritten to reference the latest kernel install from the active environment.
 
 ## Running Batch Jobs with Slurm
-The Yen-Slurm cluster is comprised of 7 shared compute nodes that use <a href="https://slurm.schedmd.com/documentation.html" target="_blank">Slurm</a> to schedule jobs and manage a queue of resources
-(if there are more requests than resouces available). It is a batch submission environment like the
-<a href="https://www.sherlock.stanford.edu" target="_blank">Sherlock HPC</a> cluster.
+The Yen-Slurm cluster is comprised of 7 shared compute nodes that use [Slurm](https://slurm.schedmd.com/documentation.html){:target="_blank"} to schedule jobs and manage a queue of resources.
+(if there are more requests than resouces available). It is a batch submission environment like the [Sherlock HPC](https://www.sherlock.stanford.edu){:target="_blank"} cluster.
  
 We can use the same `opt` virtual environment to run python code on the Slurm nodes. 
 
@@ -523,18 +524,16 @@ $ cat *.out
 
 ## Running Job Arrays with Slurm
 
-A Slurm job array is a way to launch multiple jobs in parallel. One use case is that you want to change input parameters
-to your script (a Python, Julia, or R script). Instead of manually changing the input parameters and rerunning the script
-multiple times, we can do this in with a single job array.
+A Slurm job array is a way to launch multiple jobs in parallel. One use case is when you want to change input parameters in your script (such as a Python, Julia, or R script). Instead of manually changing the input parameters and rerunning the script multiple times, you can achieve this with a single job array.
 
 #### Gurobi Example
-We will work with the following python script that was modified from <a href="https://www.gurobi.com/documentation" target="_blank">Gurobi documentation</a>.
+We will work with the following python script that was modified from [Gurobi documentation](https://www.gurobi.com/documentation){:target="_blank"}.
 
-This scripts formulates and solves the following simple MIP model using the Gurobi matrix API:
+This script formulates and solves a simple Mixed Integer Programming (MIP) model using the Gurobi matrix API:
 
 ![](../images/gurobi-eq.png)
 
-Save this python script to a new file called `gurobi_example.py`.
+Save this Python script to a new file called `gurobi_example.py`.
 
 ```python
 import numpy as np
@@ -604,7 +603,8 @@ except AttributeError:
 This python script can be run with `python gurobi_example.py` with no command line argument (`a` is set to 0 by default).
 However, we will run it via the scheduler on the Yen-Slurm cluster.
 
-Here is an example Slurm script,  that loads `gurobipy3` module, activates `venv`, and runs `gurobi_example.py` script.
+Here is an example Slurm script, that loads `gurobipy3` module, activates `venv`, and runs `gurobi_example.py` script. Save this Slurm script to a file named sensitivity_analysis.slurm:
+
 ```bash
 #!/bin/bash
 
@@ -637,13 +637,12 @@ You will need to modify the path to your `venv` enviroment as well as your email
 can submit the script to run with `sbatch sensitivity_analysis.slurm`
 
 Next, we will modify this Slurm script to run as a job array.
-Each task in a job array will run the same python script with a unique argument.
+Each task in a job array will run the same Python script with a unique argument.
 
-We are going to pass an index as a command line argument to the python script that does sensitivity analysis. The python script sets the value of `a` 
-to the corresponding array element. For example, if we run the python script with an argument `5`, the script will assign a value corresponding to the 5th element in the user defined capacity coefficient array.
+We will pass an index as a command line argument to the Python script, which performs sensitivity analysis. The Python script will set the value of `a` based on the corresponding array element. For example, if we run the Python script with the argument `5`, the script will assign the value corresponding to the 5th element in the user-defined capacity coefficient array.
 
-We also want to make sure we limit the threads to 1 - in `numpy` and
-Gurobi since we will be launching one task per one CPU core. These lines in the script achieve that:
+We also want to ensure that we limit the threads to 1 in both `numpy` and Gurobi since we will be launching one task per CPU core. The following lines in the Python script accomplish this:
+
 
 ```python
 # Limits the number of cores for numpy BLAS
@@ -691,9 +690,7 @@ The maximum job array index is 511 (`--array=0-511`) on Yen-Slurm. All tasks wil
 There is a limit of 200 concurrent jobs per user that could be running at the same time. Each task will generate a unique log file
 `gurobi-%A-%a.out` where `%A` will be the unique job ID and `%a` will be the unique task ID (from 0 to 31).
 
-After modifying the path to your `venv` environment, submit the `sensitivity_analysis_array.slurm` script to the scheduler to run the job array on the cluster.
-It will launch all 32 tasks at the same time (some might sit in the queue while others are going to run right away).
-To submit, run:
+After modifying the path to your `venv` environment, submit the `sensitivity_analysis_array.slurm` script to the scheduler to run the job array on the cluster. It will launch all 32 tasks at the same time (some might sit in the queue while others are going to run right away). To submit, run:
 
 ```
 $ sbatch sensitivity_analysis_array.slurm

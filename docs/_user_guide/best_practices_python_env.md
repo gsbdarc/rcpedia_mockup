@@ -4,22 +4,24 @@ Managing Python virtual environments can be achieved through various tools, each
 
 * `venv`: built into Python 3.3 and later,
 * `Virtualenv`: third-party tool that supports both newer and older Python versions, 
-* [Anaconda](https://www.anaconda.com/products/distribution): third-party tool popular in data science,
+* [Anaconda](https://www.anaconda.com/products/distribution){:target="_blank"}: third-party tool popular in data science,
 * `Pipenv`: third-party tool that combines package management with virtual environment management.
 
-The choice of tool often depends on the specific needs of a project and the preferences of a development team. For instance, `venv` is typically sufficient for straightforward Python projects, while `Virtualenv` might be preferred for projects requiring compatibility with older Python versions or more granular control over the environment.
+The choice of tool often depends on the specific needs of a project and the preferences of a development team. For instance, `venv` is typically sufficient for straightforward Python projects, while `virtualenv` might be preferred for projects requiring compatibility with older Python versions or more granular control over the environment.
 
 Regardless of the tool selected, the best practices for using Python virtual environments involve:
-1. **Creating a New Environment for Each Project**: This ensures that each project has its own set of dependencies.
 
-2. **Documenting Dependencies**: Clearly listing all dependencies in a requirements file or using a tool that automatically manages this aspect.
+*  **Creating a New Environment for Each Project**: This ensures that each project has its own set of dependencies.
 
-3. **Regularly Updating Dependencies**: Keeping the dependencies up-to-date to ensure the security and efficiency of your projects.
+*  **Documenting Dependencies**: Clearly listing all dependencies in a requirements file or using a tool that automatically manages this aspect.
+
+*  **Regularly Updating Dependencies**: Keeping the dependencies up-to-date to ensure the security and efficiency of your projects.
 
 By adhering to these practices, developers can take full advantage of Python virtual environments, leading to more efficient, reliable, and maintainable code development.
 
-### Best Practices on the Yens
-**Recommendation: Utilizing venv for Python Environment Management**
+## Best Practices on the Yens
+!!!Recommendation
+    Utilize `venv` for Python Environment Management
 
 We highly recommend using `venv`, Python’s built-in tool for creating virtual environments, especially in shared systems like the Yens. This recommendation is rooted in several key advantages that `venv` offers over other tools like `conda`:
 
@@ -28,7 +30,6 @@ We highly recommend using `venv`, Python’s built-in tool for creating virtual 
 * **Fast and Resource-Efficient**: `venv` offers quicker environment creation and is more lightweight compared to tools like `conda`, making it ideal for shared systems where speed and efficient use of resources are important.
 
 * **Ease of Reproducibility**: `venv` allows for easy replication of environments by using a `requirements.txt` file, ensuring that the code remains reproducible and consistent regardless of the platform.
-
 
 ## Creating a New Virtual Environment with `venv`
 
