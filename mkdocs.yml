@@ -20,7 +20,7 @@ theme:
     - search.share
     - search.suggest
   font:
-    text: Roboto
+    text: source-sans-pro
     code: Roboto Mono
 
 plugins:
@@ -59,7 +59,7 @@ markdown_extensions:
 
 
 nav:
-  - Home: index.mdpip install Pygments
+  - Home: index.md
   - Getting Started: 
       - Yen Servers: _getting_started/yen-servers.md
       - Access the Yens: _getting_started/how_access_yens.md
@@ -124,8 +124,6 @@ extra:
   update_date: 2024-08-26
 
 extra_css:
-  - stylesheets/sh.css
+  - stylesheets/sh.css # This is from the sherlock theme
   - stylesheets/output.css # This is the decantur css tailing output
-  - stylesheets/custom.css
-  - stylesheets/base.css
-
+  - stylesheets/custom.css # This is the header css
