@@ -1,3 +1,12 @@
+---
+date:
+  created: 2022-11-14
+categories:
+    - Yen
+    - Software
+---
+# Installing Software on the Yens
+
 As a yen user, you can install your own custom software in your home directory or any location where you have permissions
 (such as a shared project space). If you are working with other researchers on a shared project, it is a good idea to have 
 a dedicated shared `software` directory where you can install required software. 

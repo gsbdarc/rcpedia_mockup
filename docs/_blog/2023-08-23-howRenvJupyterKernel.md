@@ -1,4 +1,12 @@
 ---
+date:
+  created: 2023-08-23
+categories:
+    - Reproducibility
+    - Research
+---
+<!--
+---
 title: How do I export my R environment to JupyterHub?
 layout: indexPages/faqs
 subHeader: Data, Analytics, and Research Computing.
@@ -9,12 +17,14 @@ section: software
 order: 1
 updateDate: 2023-08-23
 ---
+-->
 
 # How do I export my R environment to JupyterHub?
 
 If you've created an `R` virtual environment and want to use it as a kernel in JupyterHub, follow the steps below.
 
-{% include note.html content="Want to use a Python virtual environment in JupyterHub? Have a look at <a href=\"/training/6_jupyter_hub.html\">this page</a>"%}
+!!! note
+    Want to use a Python virtual environment in JupyterHub? Have a look at [this page](/_getting_started/jupyter/)
 
 ### Launch `R` in Virtual Environment
 To start, open a terminal window, SSH into the Yens, and launch the instance of `R` associated with your virtual environment.

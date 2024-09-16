@@ -34,6 +34,8 @@ which will pop up a window with eyes tracking where your mouse is.
 ![](/images/xeyes.png)
 
 ### Examples
+<!--
+no longer have RStudio on yen
 #### R / RStudio GUI
 
 To run RStudio GUI, load the R module with the version of R that you want:
@@ -67,6 +69,7 @@ If you forget to load R module or loaded only the rstudio module, you will see a
 ![](/images/rstudio-err.png)
 
 If that happens, just load `R` module and start RStudio again.
+-->
 #### MATLAB
 To run MATLAB GUI, load the matlab module with the version that you want:
 
@@ -95,7 +98,7 @@ xstata-mp
 ```
 
 The Stata GUI will pop open and you can do anything you would normally do (but with noticeable delay due to X tunneling).
-
+<!--
 ## Setting up a Graphical Interface
 
 First, visit [this page](/faqs/howRunGraphicalInterface.html) to learn how to set up X11 forwarding on your machine. The commands `xeyes` and `xclock` are good test examples to make sure your graphical interface forwarding is working.
@@ -119,7 +122,7 @@ xstata-mp
 ``` 
 
 Stata should start with a graphical interface.  Your X11 program will also start.  Stata will probably look a little different than when you run your local copy.  
-
+-->
 
 
 #### SAS
@@ -140,9 +143,9 @@ The SAS GUI will pop open and you can do anything you would normally do (but wit
 ![](/images/sas-gui.png)
 
 !!! tip
-    Alternatively, you can run the same software that you are used to running as a GUI in JupyterHub! Have a look [here](/yen/webBasedCompute.html) to learn more about JupyterHub on the Yens and the software available.
+    Alternatively, you can run the same software that you are used to running as a GUI in JupyterHub! Have a look [here](/_getting_started/jupyter/) to learn more about JupyterHub on the Yens and the software available.
 
-
+<!--
 ## Other Page
 # Setup
 
@@ -235,3 +238,4 @@ If you forget to load R module or loaded only the rstudio module, you will see a
 ![](/images/rstudio-err.png)
 
 If that happens, just load R module and start RStudio again.
+-->
