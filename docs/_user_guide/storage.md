@@ -145,7 +145,7 @@ All GSB faculty may request project space on ZFS, and DARC will set up a corresp
 
 **GSB Students**
 
-While ZFS is primarily a resource for Stanford GSB faculty, under certain conditions Stanford GSB graduate students may also be granted project space in ZFS. If you feel you are in need of student project space on ZFS (as distinct from a faculty led project) please contact us at <gsb_darcresearch@stanford.edu>. The default size for student project space is 200 GB, but let us know if you need more space for your student project.
+While ZFS is primarily a resource for Stanford GSB faculty, under certain conditions Stanford GSB graduate students may also be granted project space in ZFS. If you feel you are in need of student project space on ZFS (as distinct from a faculty led project) please contact [DARC](mailto:gsb_darcresearch@stanford.edu). The default size for student project space is 200 GB, but let us know if you need more space for your student project.
 
 ### Yen Home Directories
 
