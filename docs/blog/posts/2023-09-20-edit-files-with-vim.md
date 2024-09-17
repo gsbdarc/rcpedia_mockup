@@ -1,6 +1,7 @@
 ---
 date:
   created: 2023-09-20
+pin: true
 ---
 
 # Edit Files on the Command Line

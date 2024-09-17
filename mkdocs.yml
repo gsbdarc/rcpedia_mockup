@@ -26,7 +26,14 @@ theme:
 plugins:
   - search
   - blog:
+      archive: true
       blog_toc: false
+      archive_date_format: MMMM yyyy
+      archive_url_date_format: yyyy/MM
+      archive_toc: true
+      authors: true
+      authors_profiles: true
+      
   - meta
   - tags:
       listings_toc: false
@@ -120,8 +127,7 @@ nav:
       # - What is a man-in-the-middle warning?: blog/posts/2020-03-13-man_in_middle.md
 
 
-extra:
-  update_date: 2024-08-26
+#extra:
 
 extra_css:
   - stylesheets/sh.css # This is from the sherlock theme
