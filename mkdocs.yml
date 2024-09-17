@@ -2,41 +2,66 @@ site_name: GSB RC Site 2024
 site_url: https://rcpedia-dev.stanford.edu
 theme:
   name: material
-  custom_dir: docs/assets
+  custom_dir: overrides
+  logo: assets/images/gsb-logo.png
   features:
-    - announce.dismiss
+    # - announce.dismiss
     - header.autohide
     - content.code.annotate
     - content.code.select
     - content.code.copy
     - navigation.indexes
+    - content.code.select
+    - content.code.copy
+   # - toc.integrate
     - navigation.sections
     - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.top
     - navigation.tracking
     - search.highlight
     - search.share
     - search.suggest
+    - attr_list
   font:
-    text: Roboto
+    text: source-sans-pro
     code: Roboto Mono
 
 plugins:
   - search
-  - blogging
-  - git-revision-date-localized
+  - blog:
+      archive: true
+      blog_toc: false
+      archive_date_format: yyyy
+      #archive_url_date_format: yyyy/MM
+      archive_toc: true
+      authors: true
+      
+  - meta
+  - tags
+ 
+  # CI=1 mkdocs build
+  - group:
+      enabled: !ENV CI
+      plugins:
+        - git-revision-date-localized
+
+  # INSIDERS=1 mkdocs build
+  - group:
+      enabled: !ENV INSIDERS
+      plugins:
+        - optimize:
+            optimize_png: false
 
 markdown_extensions:
-  - codehilite
-  - toc
-  - admonition
-  - pymdownx.details
-  - attr_list
-  - md_in_html
-  - pymdownx.superfences
-  - admonition
-  - pymdownx.details
+    - admonition
+    - codehilite
+    - toc
+    - pymdownx.details
+    - pymdownx.superfences
+    - md_in_html
+    - pymdownx.emoji
+    - pymdownx.tabbed:
+        alternate_style: true
 
 nav:
   - Home: index.md
@@ -83,32 +108,28 @@ nav:
       - Data:
           - Storage: _user_guide/storage.md
           - Data Transfer: _user_guide/data_transfer.md
-      - External Resources:
-          - Sherlock: _policies/sherlock.md
-  - Tech Blog:
-      - SEC Filings: _blog/2023-05-16-EDGARmirror.md
-      - Run on GPU: _blog/2024-03-28-run-gpu.md
-      - Edit Files on Command Line: _blog/2023-09-20-edit-files-with-vim.md
-      - Run Jobs on Yen's GPU Node: _blog/2024-04-25-yen_gpu.md
-      - Reproducible Research Essentials: _blog/2024-02-28-reproducibility_tips.md 
-      - How do I extract compressed files?: _blog/2023-08-18-how_to_uncompress.md
-      - Merging Datasets in Dask: _blog/2023-02-09-merging_data_sets_dask.md
-      - How to use Rclone: _blog/2023-09-18-rclone.md
-      - Working with Large Zip Files in Python: _blog/2022-10-10_zipfile_guide.md
-      - How Do I Install Stata on JupyterHub?: _blog/2022-02-24-install-stata-on-jupyter.md 
-      - How Do I Access SEC Documents?: _blog/2021-09-22-how_access_SEC.md 
-      - Train BERT model on Yen GPU's: _blog/2024-03-28-finBERT.md 
-      - Installing Software on the Yens: _blog/2022-11-14_installing_software.md 
-      - Using Twarc Python Package to Scrape Twitter: _blog/2023-08-08-using_twarc.md
-      - How do I export my R environment to JupyterHub?: _blog/2023-08-23-howRenvJupyterKernel.md
-      - Performance Tuning on the Yens: _blog/2021-01-20-performance_tuning.md 
-      - Word Embeddings: _blog/2020-03-04-text_processing_word_embeddings.md
-      - How do I download files from the web to the Yens?: _blog/2023-09-18-download_files_wget.md 
-extra:
-  update_date: 2024-08-26
+  - Blog:
+      - blog/index.md
+      # - Run Jobs on Yen's GPU Node: blog/posts/2024-04-25-yen_gpu.md
+      # - Train BERT model on Yen GPU's: blog/posts/2024-03-28-finBERT.md 
+      # - Run on GPU: blog/posts/2024-03-28-run-gpu.md
+      # - Reproducible Research Essentials: blog/posts/2024-02-28-reproducibility_tips.md 
+      # - Edit Files on Command Line: blog/posts/2023-09-20-edit-files-with-vim.md
+      # - How to use Rclone: blog/posts/2023-09-18-rclone.md
+      # - How do I export my R environment to JupyterHub?: blog/posts/2023-08-23-howRenvJupyterKernel.md
+      # - How do I extract compressed files?: blog/posts/2023-08-18-how_to_uncompress.md
+      # - Using Twarc Python Package to Scrape Twitter: blog/posts/2023-08-08-using_twarc.md
+      # - SEC Filings: blog/posts/2023-05-16-EDGARmirror.md
+      # - Merging Datasets in Dask: blog/posts/2023-02-09-merging_data_sets_dask.md
+      # - Installing Software on the Yens: blog/posts/2022-11-14_installing_software.md
+      # - Working with Large Zip Files in Python: blog/posts/2022-10-10_zipfile_guide.md
+      # - How Do I Access SEC Documents?: blog/posts/2021-09-22-how_access_SEC.md 
+      # - How Do I Install Stata on JupyterHub?: blog/posts/2022-02-24-install-stata-on-jupyter.md
+      # - What is a man-in-the-middle warning?: blog/posts/2020-03-13-man_in_middle.md
+
+#extra:
 
 extra_css:
-  - assets/css/index.css
-  - assets/css/sh.css
-  - assets/css/fonts.css
-  - css/custom.css
+  - stylesheets/sh.css # This is from the sherlock theme
+  - stylesheets/output.css # This is the decantur css tailing output
+  - stylesheets/custom.css # This is the header css

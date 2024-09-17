@@ -1,5 +1,12 @@
+---
+date:
+  created: 2024-02-28
+categories:
+    - Reproducibility
+    - Research
+---
 # Reproducible Research Essentials
-<div class="last-updated">Last updated: 2024-02-28</div>
+
 
 This guide includes key components to consider when aiming for reproducible research, specifically focusing on documenting code and
 computational environment, making a README file, documenting inputs and expected outputs, and providing clear instructions for replicating results.
