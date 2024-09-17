@@ -1,0 +1,11 @@
+authors:
+  jeffotter:
+    name: Jeff Ott        # Author name
+    description: Darc Team Research Analytics Scientist # Author description
+    avatar: https://github.com/jeffotter.png         # Author avatar
+    url: https://github.com/Jeffotter            # Author website URL
+  mason:
+    name: Mason Jiang        # Author name
+    description: Darc Team Data Engineering Manager # Author description
+    avatar: https://github.com/mpj2104.png         # Author avatar
+    url: https://github.com/mpj2104            # Author website URL

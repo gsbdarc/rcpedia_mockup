@@ -19,6 +19,7 @@ theme:
     - search.highlight
     - search.share
     - search.suggest
+    - attr_list
   font:
     text: source-sans-pro
     code: Roboto Mono
@@ -32,11 +33,9 @@ plugins:
       archive_url_date_format: yyyy/MM
       archive_toc: true
       authors: true
-      authors_profiles: true
       
   - meta
-  - tags:
-      listings_toc: false
+  - tags
  
   # CI=1 mkdocs build
   - group:
@@ -48,22 +47,17 @@ plugins:
   - group:
       enabled: !ENV INSIDERS
       plugins:
-        - privacy
         - optimize:
             optimize_png: false
 
 markdown_extensions:
-  - codehilite
-  - toc
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
-  - admonition
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-
+    - admonition
+    - codehilite
+    - toc
+    - pymdownx.details
+    - pymdownx.superfences
+    - md_in_html
+    - pymdownx.emoji
 
 nav:
   - Home: index.md
