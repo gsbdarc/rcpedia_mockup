@@ -35,8 +35,6 @@ plugins:
       #archive_url_date_format: yyyy/MM
       archive_toc: true
       authors: true
-      
-  - meta
   - tags
  
   # CI=1 mkdocs build
