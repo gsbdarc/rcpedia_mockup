@@ -3,17 +3,25 @@
 
 /* theme color schemes */
 :root {
-  --md-primary-fg-color:               hwb(0 9% 69%);
+  --md-primary-fg-color:               hwb(0 98% 2%);
   --md-primary-fg-color--light:        #b1040d86;
-  --md-primary-fg-color--dark:         #820000;
+  --md-primary-fg-color--dark:         #1e1e1e;
   --md-accent-fg-color:                #b1040d9e;
   --md-accent-fg-color--transparent:   #b1040e0a;
+  --md-accent-bg-color:                #0000000a;
+  --md-typeset-a-color:                #B1040E; /* Specifically for body content links */
+}
+
+
+.md-tabs__item {
+  color: #000;
 }
 
 /* accessibility requirement */
 .md-typeset a {
     border-bottom: .05rem dotted var(--md-primary-fg-color--light);
 }
+
 
 /* announce bar */
 .md-banner a,
@@ -29,9 +37,14 @@
 
 /* title style */
 .md-header__title {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  font-size:   1.2rem;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: normal; /* Ensures the font is not bold */
+  color: #383838;
 }
+
+
+
 .md-header__title .md-ellipsis:after {
     /* prevent text clipping */
     content: '';

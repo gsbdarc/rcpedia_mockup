@@ -1,3 +1,7 @@
+.md-content a:hover {
+  color: #ff5722; /* Change hover color */
+}
+
 .md-header-nav__button img {
     height: 100px;  /* Adjust based on your desired logo size */
     width: auto;   /* Maintain aspect ratio */
@@ -10,7 +14,23 @@
     height: auto;
     width: 10rem;
 }
-.md-banner {
-    background-color: #8C1515; /* Set your desired color */
-    color: #ffffff; /* Adjust text color if needed */
+
+.md-typeset-color {
+    color: blue;
 }
+
+.md-banner {
+    background-color: #8C1515;
+    color: #ffffff;
+    display: table;
+    width: 100%; 
+    margin-top: 0px;
+    height: 30px;
+  }
+
+.md-header__title {
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: normal; /* Ensures the font is not bold */
+  }
+  

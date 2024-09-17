@@ -1,18 +1,20 @@
-site_name: GSB RC Site 2024
+site_name: Research Computing
 site_url: https://rcpedia-dev.stanford.edu
 theme:
   name: material
+  favicon: assets/images/favicon.ico.png
   custom_dir: overrides
-  logo: assets/images/gsb-logo.png
+  logo: assets/images/gsb-logo-color.webp
   features:
-    # - announce.dismiss
     - header.autohide
     - content.code.annotate
-    - navigation.indexes
     - content.code.select
     - content.code.copy
+   # - announce.dismiss
    # - toc.integrate
+    - navigation.indexes
     - navigation.sections
+    - navigation.path
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.tracking
@@ -20,8 +22,8 @@ theme:
     - search.share
     - search.suggest
   font:
-    text: Roboto
-    code: Roboto Mono
+    text: Source Sans Pro
+    code: Source Code Pro
 
 plugins:
   - search
@@ -59,7 +61,7 @@ markdown_extensions:
 
 
 nav:
-  - Home: index.mdpip install Pygments
+  - Home: index.md
   - Getting Started: 
       - Yen Servers: _getting_started/yen-servers.md
       - Access the Yens: _getting_started/how_access_yens.md
