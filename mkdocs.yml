@@ -8,6 +8,8 @@ theme:
     # - announce.dismiss
     - header.autohide
     - content.code.annotate
+    - content.code.select
+    - content.code.copy
     - navigation.indexes
     - content.code.select
     - content.code.copy
@@ -71,7 +73,6 @@ nav:
   - Policies: 
       - User Limits: _policies/user_limits.md
       - Services: _policies/services.md
-      - Sherlock: _policies/sherlock.md
       - Collaborators: _policies/collaborators.md
       - Workgroups: _policies/workgroups.md
       - Security: _policies/security.md
@@ -84,12 +85,15 @@ nav:
           - File Management: _user_guide/best_practices_file_management.md
           - Monitor Resource Usage: _user_guide/best_practices_monitor_usage.md
           - GUI: _user_guide/best_practices_gui.md
+          - screen: _user_guide/best_practices_screen.md
       - Slurm:
+          - Slurm: _user_guide/slurm.md
           - Migrating From JupyterHub: _user_guide/best_practices_migrating_from_jupyter.md
           - Julia SLURM Job Arrays: _user_guide/best_practices_julia_jobarray.md
           - R SLURM Job Array: _user_guide/best_practices_R_slurm_job_array.md
           - Python Job Array: _user_guide/best_practices_python_job_array.md
           - Matlab Slurm Job: _user_guide/best_practices_matlab_slurm_job.md
+          - GPU Slurm Jobs: _user_guide/best_practices_gpu.md
       - Python:
           - Python Virtual Environments: _user_guide/best_practices_python_env.md
           - Parallel Processing Python: _user_guide/best_practices_parallel_processing_python.md
@@ -102,6 +106,7 @@ nav:
           - Man-in-the-Middle Warning: _user_guide/man_in_middle.md
           - Julia on Jupyter: _user_guide/best_practices_julia_jupyter.md
       - Data:
+          - Storage: _user_guide/storage.md
           - Data Transfer: _user_guide/data_transfer.md
   - Blog:
       - blog/index.md
@@ -121,7 +126,6 @@ nav:
       # - How Do I Access SEC Documents?: blog/posts/2021-09-22-how_access_SEC.md 
       # - How Do I Install Stata on JupyterHub?: blog/posts/2022-02-24-install-stata-on-jupyter.md
       # - What is a man-in-the-middle warning?: blog/posts/2020-03-13-man_in_middle.md
-
 
 #extra:
 
