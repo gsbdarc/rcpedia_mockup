@@ -29,8 +29,8 @@ plugins:
   - blog:
       archive: true
       blog_toc: false
-      archive_date_format: MMMM yyyy
-      archive_url_date_format: yyyy/MM
+      archive_date_format: yyyy
+      #archive_url_date_format: yyyy/MM
       archive_toc: true
       authors: true
       
@@ -58,6 +58,8 @@ markdown_extensions:
     - pymdownx.superfences
     - md_in_html
     - pymdownx.emoji
+    - pymdownx.tabbed:
+        alternate_style: true
 
 nav:
   - Home: index.md
