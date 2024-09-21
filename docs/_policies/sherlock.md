@@ -1,7 +1,6 @@
 # Sherlock
 
-## What is Sherlock?
-![Sherlock Logo](https://www.sherlock.stanford.edu/assets/images/logo.png){ align=right }
+![Sherlock Logo on a Narwhal](/assets/images/sherlock_narwhal_small.png){ align=right }
 
 [Sherlock](https://www.sherlock.stanford.edu/) is a high-performance computing (HPC) cluster available for research at Stanford and operated by [Stanford Research Computing](https://srcc.stanford.edu)<a href="https://srcc.stanford.edu/" target="_blank">Stanford Research Computing</a>. Sherlock has over 1,700 compute nodes with 57,000+ CPU cores. It is divided into several logical partitions that are either accessble for everyone to use (`normal`) or provisioned specifically for a specific group.
 
@@ -37,8 +36,8 @@ For GSB faculty members, SRC can provision a Sherlock account with a PI group th
 
 ### Logging In
 
-```bash
-$ ssh <$USER>sherlock.stanford.edu
+```title="Terminal Command"
+ssh <$USER>sherlock.stanford.edu
 ```
 
 Enter your SUNet ID and Duo authenticate to login.
@@ -52,13 +51,13 @@ Sherlock uses <a href="_user_guide/slurm/" target="_blank">Slurm</a> to schedule
 
 See the queue on the `normal` partition:
 
-```bash
-$ squeue -p normal
+```title="Terminal Command"
+squeue -p normal
 ```
 
 To get information about partitions that are available to you, run
-```bash
-$ sh_part
+```title="Terminal Command"
+sh_part
 ```
 
 
@@ -126,27 +125,27 @@ python hello.py
 
 Submit with:
 
-```bash
-$ sbatch hello.slurm
+```title="Terminal Command"
+sbatch hello.slurm
 ```
 
 Monitor the queue:
 
-```bash
-$ watch squeue -u $USER
+```title="Terminal Command"
+watch squeue -u $USER
 ```
 
 You might see job's status as `CF` (configuring) when the job starts and `CG` (completing) when the job finishes.
 
 Once the job is finished, look at the output:
 
-```bash
-$ cat hello-$JOBID.out
+```title="Terminal Command"
+cat hello-$JOBID.out
 ```
 
 You should see a similar output:
 
-```bash
+```{ .yaml .no-copy }
 Hello from sh02-05n71.int node
 ```
 
@@ -154,8 +153,8 @@ Hello from sh02-05n71.int node
 
 Now, we want to run a large job array. First, let's check user job limits for the `normal` partition with:
 
-```bash
-$ sacctmgr show qos normal
+```title="Terminal Command"
+sacctmgr show qos normal
 ```
 
 to find that `MaxTRESPU` limit is 512 CPUs max so we will need to limit our job array to 512 CPU cores.
@@ -197,15 +196,15 @@ python hello-task.py $SLURM_ARRAY_TASK_ID
 
 Submit with:
 
-```bash
-$ sbatch hello-job-array.slurm
+```title="Terminal Input"
+sbatch hello-job-array.slurm
 ```
 
 
 Monitor the queue:
 
-```bash
-$ watch squeue -u $USER
+```title="Terminal Input"
+watch squeue -u $USER
 ```
 
 ### Deep learning on GPU
@@ -305,38 +304,38 @@ Note that the `py-tensorflow` module on Sherlock contains the Python Tensorflow 
 
 Submit the job to the `gpu` partition with:
 
-```bash
-$ sbatch keras-gpu.slurm
+```title="Terminal Input"
+sbatch keras-gpu.slurm
 ```
 
 Monitor your job:
 
-```bash
-$ squeue -u $USER
+```title="Terminal Input"
+squeue -u $USER
 ```
 
 You should see something like:
 
-```bash
+```{ .yaml .no-select }
            JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
           20372833       gpu train-gp nrapstin  R       0:05      1 sh03-12n07
 ```
 
 Once the job is running, connect to the node where your job is running to monitor GPU utilization:
 
-```bash
-$ ssh sh03-12n07
+```title="Terminal Input"
+ssh sh03-12n07
 ```
 
 Once you connect to the GPU node, load the cuda module there and monitor GPU utilization while the job is running:
 
-```bash
-$ module load cuda/11.0.3
-$ watch nvidia-smi
+```title="Terminal Input"
+module load cuda/11.0.3
+watch nvidia-smi
 ```
 
 You should see that the GPU is being utilized (GPU-Util column):
-```
+```{ .yaml .no-select }
 Every 2.0s: nvidia-smi                                                                                         
 Tue Nov 15 13:43:04 2022
 +-----------------------------------------------------------------------------+
@@ -362,6 +361,6 @@ Tue Nov 15 13:43:04 2022
 
 Once the job is done, look at the output file:
 
-```bash
-$ cat train-gpu*.out
+```title="Terminal Command"
+cat train-gpu*.out
 ```

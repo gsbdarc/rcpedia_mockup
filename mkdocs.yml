@@ -9,6 +9,7 @@ theme:
     - content.code.annotate
     - content.code.select
     - content.code.copy
+    - content.tabs.link
     - navigation.indexes
     - navigation.sections
     - navigation.tabs
@@ -37,6 +38,8 @@ markdown_extensions:
   - pymdownx.superfences
   - admonition
   - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true  
 
 nav:
   - Home: index.md
@@ -64,16 +67,13 @@ nav:
       - Slurm:
           - Slurm: _user_guide/slurm.md
           - Migrating From JupyterHub: _user_guide/best_practices_migrating_from_jupyter.md
-          - Julia SLURM Job Arrays: _user_guide/best_practices_julia_jobarray.md
-          - R SLURM Job Array: _user_guide/best_practices_R_slurm_job_array.md
-          - Python Job Array: _user_guide/best_practices_python_job_array.md
-          - Matlab Slurm Job: _user_guide/best_practices_matlab_slurm_job.md
+          - Job Arrays: _user_guide/job_arrays.md
           - GPU Slurm Jobs: _user_guide/best_practices_gpu.md
       - Python:
           - Python Virtual Environments: _user_guide/best_practices_python_env.md
           - Parallel Processing Python: _user_guide/best_practices_parallel_processing_python.md
       - R:
-          - R: _user_guide/best_practices_r.md
+          - Best Practices in R: _user_guide/best_practices_r.md
       - Optimization Software:
           - Optimization: _user_guide/best_practices_optimization.md
       - Troubleshooting:
