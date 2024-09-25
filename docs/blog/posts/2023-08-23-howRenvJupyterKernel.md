@@ -1,13 +1,6 @@
 ---
-title: How do I export my R environment to JupyterHub?
-layout: indexPages/faqs
-subHeader: Data, Analytics, and Research Computing.
-keywords: Jupyter, faq, notebook, R, Yens, environment
-category: faqs
-parent: faqs
-section: software
-order: 1
-updateDate: 2023-08-23
+date:
+  created: 2023-08-23
 ---
 
 # How do I export my R environment to JupyterHub?

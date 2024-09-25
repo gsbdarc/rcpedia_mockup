@@ -1,5 +1,11 @@
+---
+date:
+  created: 2023-09-20
+pin: true
+---
+
 # Edit Files on the Command Line
-<div class="last-updated">Last updated: 2023-09-20</div>
+
 
 We can utilize JupyterHub Text Editor to <a href="/gettingStarted/8_jupyterhub.html#text-file-editor" target="_blank">directly edit scripts on the Yens</a>. 
 However, sometimes it is more convenient to quickly edit files from the command line (without needing to go to a different program like the browser

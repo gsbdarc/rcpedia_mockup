@@ -1,7 +1,10 @@
 # What is a "man-in-the-middle" warning?
-<div class="last-updated">Last updated: 2020-03-13</div>
 
-If you try to log in to the Yen servers after a long time, or after a major upgrade, you may get something like the following error:
+## Understanding the warning
+
+When you try to connect to a server using SSH, you might see a warning message like the one below.
+
+This warning indicates that the server's host key—the unique identifier SSH uses to recognize the server—has changed since your last connection. This could happen due to legitimate reasons like server maintenance, upgrades, or reconfigurations. However, it could also signal a security threat, such as a man-in-the-middle attack where an unauthorized party is intercepting your connection. Hence the scary warning message.
 
 ```
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -14,6 +17,9 @@ It is also possible that a host key has just been changed.
 
 You can resolve this by removing the mismatched host key in your `known_hosts` file.
 
+The known_hosts file, located in your ~/.ssh/ directory, stores the host keys of servers you've connected to previously. SSH uses this file to verify the server's identity during connection attempts.
+
+
  The following loop can be run in your local terminal to run  `ssh-keygen` for all of the yens, which will clear out the entries in your `known_hosts` file:
 
 ```bash
@@ -24,4 +30,22 @@ for m in "${mach[@]}" ; do
 done
 ```
 
-Learn more about connecting to the Yens [here](/yen/index.html).
+## Reconnecting to the Yens
+
+After removing the old host key, attempt to reconnect:
+
+```bash
+ssh your_username@yen1.stanford.edu
+```
+
+You will be prompted to accept the new host key:
+
+```vbnet
+The authenticity of host 'yen1.stanford.edu (XX.XX.XX.XX)' can't be established.
+RSA key fingerprint is SHA256:...
+Are you sure you want to continue connecting (yes/no)?
+```
+
+Type `yes` to continue. The new host key will be added to your known_hosts file, and the connection will proceed.
+
+Learn more about connecting to the Yens [here](../_getting_started/how_access_yens.md).

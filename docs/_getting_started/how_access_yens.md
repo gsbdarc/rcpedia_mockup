@@ -1,3 +1,7 @@
+---
+subtitle: How to Access the Yens
+---
+
 # How Do I Get Access to the Yens?
 
 By default, GSB faculty, staff, PhD students, and research fellows have access to the Yens.

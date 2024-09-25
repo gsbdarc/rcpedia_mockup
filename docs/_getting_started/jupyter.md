@@ -141,10 +141,15 @@ $ python -m ipykernel install --user --name=interm-yens
 
 
 If installed correctly, you should see:
-```bash
+
+``` { .yaml .select }
 Installed kernelspec interm-yens in /home/users/$USER/.local/share/jupyter/kernels/interm-yens
 ```
 where `$USER` is your username.
+<!-- ```bash
+Installed kernelspec interm-yens in /home/users/$USER/.local/share/jupyter/kernels/interm-yens
+```
+where `$USER` is your username. -->
 
 #### Connect to JupyterHub
 

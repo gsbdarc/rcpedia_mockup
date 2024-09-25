@@ -1,5 +1,10 @@
+---
+date:
+  created: 2023-08-18
+---
+
 # How do I extract compressed files?
-<div class="last-updated">Last updated: 2023-08-18</div>
+
 
 Large collections of files will often be compressed in order to make them more friendly for transfer or long-term storage. Below are examples on how to uncompress a few common compression file types on the Yens.
 

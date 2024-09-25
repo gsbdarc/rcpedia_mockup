@@ -1,13 +1,13 @@
 ---
-title: Using Twarc python package to scrape Twitter
-layout: indexPages/topicGuides
-subHeader: Data, Analytics, and Research Computing.
-keywords: yens, twarc, python, twitter, scrape
-category: topicGuides
-parent: topicGuides
-order: 1
-updateDate: 2023-08-08
+date:
+  created: 2023-08-08
+pin: true
+links:
+    - External link: https://google.com
+
+ 
 ---
+
 
 # Using Twarc python package to scrape Twitter
 
