@@ -2,7 +2,7 @@
 
 ![Sherlock Logo on a Narwhal](/assets/images/sherlock_narwhal_small.png){ align=right }
 
-[Sherlock](https://www.sherlock.stanford.edu/) is a high-performance computing (HPC) cluster available for research at Stanford and operated by [Stanford Research Computing](https://srcc.stanford.edu)<a href="https://srcc.stanford.edu/" target="_blank">Stanford Research Computing</a>. Sherlock has over 1,700 compute nodes with 57,000+ CPU cores. It is divided into several logical partitions that are either accessble for everyone to use (`normal`) or provisioned specifically for a specific group.
+[Sherlock](https://www.sherlock.stanford.edu/) is a high-performance computing (HPC) cluster available for research at Stanford and operated by [Stanford Research Computing](https://srcc.stanford.edu){:target="_blank"}. Sherlock has over 1,700 compute nodes with 57,000+ CPU cores. It is divided into several logical partitions that are either accessble for everyone to use (`normal`) or provisioned specifically for a specific group.
 
 #### Condo Model
 Stanford Research Computing provides faculty with the opportunity to purchase from a catalog a recommended compute node configurations, for the use of their research teams. Using a traditional compute cluster "condo" model, participating faculty and their teams get priority access to the resources they purchase. When those resources are idle, other "owners" can use them, until the purchasing owner wants to use them. When this happens, those other owners jobs are re-queued to free up resources. Participating owner PIs also have shared access to the original base Sherlock nodes, along with everyone else.
