@@ -1,5 +1,10 @@
+---
+date:
+  created: 2023-05-16
+author: mpjiang
+---
+
 # SEC Filings
-<div class="last-updated">Last updated: 2023-05-16</div>
 
 All companies are required to file registration statements, periodic reports, and other forms to the SEC and these filings are popular sources of data for researchers at the GSB. This topic guide covers some of the resources available to facilitate research using these filings and a few sample workflows.
 

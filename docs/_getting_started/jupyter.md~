@@ -1,0 +1,150 @@
+---
+title: Web-based Computing
+layout: indexPages/yen
+subHeader: How to of web-based computing
+keywords: yen, web, jupyter, cluster, server
+category: yen
+parent: yen
+order: 5
+updateDate: 2020-02-13
+---
+
+# Jupyter
+
+Web-based computing is now available on the Yen servers with [JupyterHub!](https://jupyterhub.readthedocs.io/en/stable/).  JupyterHub is a platform designed to allow multiple users to launch their own Jupyter notebook servers on a shared system with minimal user effort. Our implementation of JupyterHub currently features several language kernels including Python 3, R, and SAS.
+
+## Getting Started
+
+To get started, open a web browser and visit one of the following links for each server:
+
+- <a href="https://yen1.stanford.edu/jupyter/" target="_blank">Yen1 https://yen1.stanford.edu/jupyter</a>
+- <a href="https://yen2.stanford.edu/jupyter/" target="_blank">Yen2 https://yen2.stanford.edu/jupyter</a>
+- <a href="https://yen3.stanford.edu/jupyter/" target="_blank">Yen3 https://yen3.stanford.edu/jupyter</a>
+- <a href="https://yen4.stanford.edu/jupyter/" target="_blank">Yen4 https://yen4.stanford.edu/jupyter</a>
+- <a href="https://yen5.stanford.edu/jupyter/" target="_blank">Yen5 https://yen5.stanford.edu/jupyter</a>
+
+You will need to login with your SUNet credentials, and then `Launch Server`. From there, you will have access to the web-based computing services available.
+
+If you are a non-GSB collaborator and don't have a SUNet, you must request full sponsorship to access Jupyter. You can learn more about SUNet ID sponsorship [here](https://uit.stanford.edu/service/sponsorship).
+
+{% include important.html content="JupyterHub instances on each `yen` server are independent of each other! If you launch a server on `yen2`, it will only use resources available on `yen2`" %}
+
+{% include warning.html content="JupyterHub does not work well on Safari - we recommend using a different browser" %}
+
+
+## Features of JupyterHub
+
+We recommend taking a look at the [official documentation](https://jupyter-notebook.readthedocs.io) for JupyterHub if you have any questions on the features below!
+
+### Notebooks
+-------------
+![](/images/jupyter_notebooks.png "Notebooks")
+
+Notebooks allow you to write code and execute it within a web browser.  Code is written into cells, which can be run in any order, on demand.  You can also include text, images, and plots to make your code read like a lab notebook.  As of March 2020, the above coding languages are supported. Contact the [DARC team](mailto:gsb_darcresearch@stanford.edu) if you have a language you would like installed
+
+### RStudio
+-----------
+![](/images/jupyter_rstudio.png "RStudio")
+
+RStudio is also available! Clicking this link will bring up a new tab with a web-based RStudio on the Yens.
+
+### SAS
+-----------
+![](/images/sas-jupyter_notebooks.png "SAS")
+
+There are a few preliminary steps that need to be taken before SAS can be used on Yens/notebooks.
+
+* Log into the Yens
+* Install the [SAS kernel for Jupyter](https://github.com/sassoftware/sas_kernel) by running `pip3 install sas_kernel`
+* Confirm that you see the newly installed SAS kernel by running `jupyter kernelspec list`
+* Find the location where this new kernel is installed by running `pip3 show saspy` (it will probably be something like `/home/users/{SUNetID}/.local/lib/python3.6/site-packages/saspy`)
+* Edit the default SAS path in the `sascfg.py` file within that directory to be `/software/non-free/SAS-langsup/SAS9.4/software/SASFoundation/9.4/sas`
+* Restart JupyterHub and start a new notebook with the SAS kernel. After running your first cell, the output should show a successful connection to SAS.
+
+
+### I don't see Julia on my JupyterHub!
+---------------------------------------
+
+See our [FAQ page](/faqs/installJuliaOnJupyter.html) on how to install it!
+
+
+### Consoles and Terminal
+-------------------------
+![](/images/jupyter_consoles.png "Consoles")
+
+You can also launch interactive consoles from JupyterHub.  These will behave very similar to the versions on the Yen servers.
+
+![](/images/jupyter_terminal.png "Terminal")
+
+You can also launch a bash terminal from JupyterHub.  This provides access to commands you would normally run on the Yens, but through the web browser.
+
+### File Upload and Download
+----------------------------
+![](/images/jupyter_upload.png "File Upload")
+
+One very useful feature of JupyterHub is the ability to upload and download files from ZFS/AFS.  First, make sure you are in the proper directory.  Then, to upload, click the up arrow on the top left of your screen to select a file.
+
+![](/images/jupyter_download.png "File Download")
+
+To download, right click the file you would like, and click "Download".
+
+## Technical Details
+
+### File Access and Storage
+---------------------------
+The JupyterHub instances will automatically launch from your home directory on the Yens.  Use the `afs-home` and `zfs` directories in your home directory to navigate to your normal file systems.
+
+### Installing Packages
+-----------------------
+JupyterHub will load packages found in your `~/.local/` directory.  If you wish to install Python packages from a JupyterHub notebook, run `!pip3 install --user <package_name>` in a cell.  We recommend using similar user-based installs for other package managers.
+
+### Technical Limits
+------------
+The following limits will be imposed on JupyterHub servers:
+
+<iframe class="airtable-embed" src="https://airtable.com/embed/shrGC2dYzvDSgJfXa?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+JupyterHub instance will shut down after 3 hours idle (no notebooks actively running code).
+
+{% include warning.html content="Idle servers shut down will not retain any local packages or variables in the notebooks.  Please save your output" %}
+
+If your processes require more than these limits, reach out to the [DARC team](/services/researchSupportRequest.html) for support.
+
+3 https://yen3.stanford.edu/jupyter</a>
+- <a href="https://yen4.stanford.edu/jupyter/" target="_blank">Yen4 https://yen4.stanford.edu/jupyter</a>
+- <a href="https://yen5.stanford.edu/jupyter/" target="_blank">Yen5 https://yen5.stanford.edu/jupyter</a>
+
+In JupyterHub, you should see the new kernel show up under Notebook Launcher:
+![](/images/jupyter-kernel-interm-yens.png)
+
+#### Test Your Process on JupyterHub
+
+Try running your JupyterHub notebook using the `venv` kernel -- `interm-yens`, you just installed. You can change the kernel of an existing notebook by going to `Kernel` --> `Change Kernelâ€¦`:
+
+![](/images/jupyterhub_changekernel.png)
+
+
+Make sure you can import the required python packages in the notebook cell.
+
+Copy and paste the following to test the import statements for python packages we will use:
+```python
+import time
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+```
+
+Kernel should indicate your `venv` environment name `interm-yens` (or whatever name you chose when adding this kernel to JupyterHub above):
+![](/images/jupyter-kernel.png)
+
+In case you need to uninstall a kernel from JupyterHub, use:
+
+```bash
+$ source /zfs/gsb/intermediate-yens/venv/bin/activate
+$ jupyter kernelspec list
+$ jupyter kernelspec uninstall <kernel-name>
+```
+where `<kernel-name>` is the name of the kernel you want to uninstall.
+
+---
+<a href="/training/5_python_env.html"><span class="glyphicon glyphicon-menu-left fa-lg" style="float: left;"/></a> <a href="/training/7_run_first_job.html"><span class="glyphicon glyphicon-menu-right fa-lg" style="float: right;"/></a>
+

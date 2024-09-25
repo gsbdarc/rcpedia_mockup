@@ -1,6 +1,7 @@
 ---
 date:
   created: 2023-08-23
+<<<<<<< HEAD:docs/_blog/2023-08-23-howRenvJupyterKernel.md
 categories:
     - Reproducibility
     - Research
@@ -16,6 +17,8 @@ parent: faqs
 section: software
 order: 1
 updateDate: 2023-08-23
+=======
+>>>>>>> 52ec07f1356c9af6e7158a2f327c8651ff74e0fd:docs/blog/posts/2023-08-23-howRenvJupyterKernel.md
 ---
 -->
 
