@@ -1,3 +1,7 @@
+# swp files
+*.swp
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -9,6 +13,7 @@ __pycache__/
 # Distribution / packaging
 .Python
 build/
+mkdocs/
 develop-eggs/
 dist/
 downloads/
