@@ -1,26 +1,8 @@
 ---
 date:
   created: 2023-08-23
-<<<<<<< HEAD:docs/_blog/2023-08-23-howRenvJupyterKernel.md
-categories:
-    - Reproducibility
-    - Research
+author: mpjiang
 ---
-<!--
----
-title: How do I export my R environment to JupyterHub?
-layout: indexPages/faqs
-subHeader: Data, Analytics, and Research Computing.
-keywords: Jupyter, faq, notebook, R, Yens, environment
-category: faqs
-parent: faqs
-section: software
-order: 1
-updateDate: 2023-08-23
-=======
->>>>>>> 52ec07f1356c9af6e7158a2f327c8651ff74e0fd:docs/blog/posts/2023-08-23-howRenvJupyterKernel.md
----
--->
 
 # How do I export my R environment to JupyterHub?
 
