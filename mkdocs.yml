@@ -14,7 +14,6 @@ theme:
     - navigation.indexes
     - content.code.select
     - content.code.copy
-   # - toc.integrate
     - navigation.sections
     - navigation.tabs
     - navigation.tabs.sticky
@@ -22,7 +21,6 @@ theme:
     - search.highlight
     - search.share
     - search.suggest
-    - attr_list
   font:
     text: source-sans-pro
     code: Roboto Mono
@@ -33,7 +31,6 @@ plugins:
       archive: true
       blog_toc: false
       archive_date_format: yyyy
-      #archive_url_date_format: yyyy/MM
       archive_toc: true
       authors: true
   - tags
@@ -52,6 +49,7 @@ plugins:
             optimize_png: false
 
 markdown_extensions:
+    - attr_list # Enables links open in new tab with {:target="_blank"} syntax 
     - admonition
     - attr_list
     - codehilite
