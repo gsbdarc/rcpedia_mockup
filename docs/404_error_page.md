@@ -1,6 +1,6 @@
 # 404 - Page Not Found
 
-![404 Error](https://via.placeholder.com/600x200.png?text=404+Error)
+![404 Error](/docs/assets/images/sad_narwhal.png)
 
 ---
 
