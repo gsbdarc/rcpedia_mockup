@@ -1,29 +1,31 @@
-site_name: GSB RC Site 2024
+site_name: Research Computing
 site_url: https://rcpedia-dev.stanford.edu
 theme:
   name: material
   custom_dir: overrides
-  logo: assets/images/gsb-logo.png
+  logo: assets/images/gsb-logo-color.webp
+  favicon: assets/images/stanford-favicon.png
   features:
-    # - announce.dismiss
+    - announce.dismiss
     - header.autohide
     - content.code.annotate
     - content.code.select
     - content.code.copy
     - content.tabs.link
-    - navigation.indexes
     - content.code.select
     - content.code.copy
+    - navigation.indexes
     - navigation.sections
     - navigation.tabs
     - navigation.tabs.sticky
+    - navigation.path
     - navigation.tracking
     - search.highlight
     - search.share
     - search.suggest
   font:
-    text: source-sans-pro
-    code: Roboto Mono
+    text: Source Sans Pro
+    code: Source Code Pro
 
 plugins:
   - search
@@ -125,6 +127,5 @@ nav:
 #extra:
 
 extra_css:
-  - stylesheets/sh.css # This is from the sherlock theme
-  - stylesheets/output.css # This is the decantur css tailing output
-  - stylesheets/custom.css # This is the header css
+  - stylesheets/output.css # This is the decanter css tailwind output
+  - stylesheets/custom.css # This is custom css
