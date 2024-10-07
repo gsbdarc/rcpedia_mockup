@@ -1,9 +1,15 @@
 This is a guide for making edits to new RCpedia website, using `git` to push your changes and testing locally first to preview the changes.
 
-Start by cloning the repo to your local directory:
+If you're doing this for the first time, start by cloning the repo to your local directory:
 
 ```
 git clone https://github.com/gsbdarc/rcpedia_mockup.git
+```
+
+Switch to the QA Branch first
+
+```
+git checkout QA
 ```
 
 Make a new feature branch and switch to it:
@@ -28,6 +34,11 @@ mkdocs serve
 ```
 
 - Navigate to `http://localhost:8000/` to view the website.
+
+Confirm you have the most recent changes and no merge conflicts:
+```
+git pull QA <your branch file>
+```
 
 If changes look good, push the changes to your branch.
 
