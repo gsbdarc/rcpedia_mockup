@@ -94,6 +94,8 @@ nav:
           - Parallel Processing Python: _user_guide/best_practices_parallel_processing_python.md
       - R:
           - Best Practices in R: _user_guide/best_practices_r.md
+      - Julia:
+          - Running Julia Interactively: _user_guide/julia.md
       - Optimization Software:
           - Optimization: _user_guide/best_practices_optimization.md
       - Troubleshooting:
