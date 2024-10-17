@@ -14,7 +14,7 @@ The University provides a [simple categorization of data risk levels](http://dat
 
 It is **your** responsibility as a researcher to be a responsible steward of your data. If you're ever unsure the risk categorization of your data, please [contact us](mailto:gsb_darcresearch@stanford.edu){:target="_blank"} to discuss how to best achieve your research goals while being mindful of data security.
 
-!!! warning
+!!! danger
     The Yen servers are **not** approved for High risk data.
 
 If you choose to use your own independent system (e.g., your own machine in the cloud), you are responsible for correctly managing any secure data and credentials necessary.

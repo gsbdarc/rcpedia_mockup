@@ -5,14 +5,15 @@ categories:
     - EDGAR
     - SEC Filings
     - text data
+authors:
+    - mason
+    - awn
 ---
 # SEC Filings
-<div class="last-updated">Last updated: 2024-09-30</div>
-
 All companies are required to file registration statements, periodic reports, and other forms to the SEC and these filings are popular sources of data for researchers at the GSB. This post covers some of the resources available to facilitate research using these filings and a few sample workflows.
 
 !!! note
-    We gave a presentation on "Using SEC Documents at the GSB" on November 16, 2022. Watch the recording and view the slides [here](https://libguides.stanford.edu/hub-recordings#s-lg-box-29618224){:target="_blank"}.
+    We gave a presentation on "Using SEC Documents at the GSB" on November 16, 2022. Watch the recording and view the slides [here](https://gsbresearchhub.stanford.edu/training-workshops?search=using+sec+documents+at+the+gsb){:target="_blank"}.
 
 
 ## EDGAR
@@ -23,7 +24,7 @@ While viewing individual filings on EDGAR is useful, for those who need bulk acc
 ### Yens Collection
 The DARC team maintains a mirror of the raw text filings on the Yens by checking for new filings on the EDGAR system on a weekly basis and then downloading those filings. An example path for an individual filing located on the Yens is:
 
-```bash
+```title="Filepath"
 /zfs/data/NODR/EDGAR_HTTPS/edgar/data/1050122/0001047469-03-017249.txt
 ```
 
@@ -36,7 +37,7 @@ For clarity, the <span style="color: red;"><b>middle portion</b></span> of this 
 The above provides a clear way to identify specific documents, but not a way to "query" those documents. To address this, the DARC team also maintains a [SQL dataset on Redivis](https://redivis.com/datasets/dq12-4q4st0kjt){:target="_blank"} that can be queried for specific filings.
 
 This dataset contains a table, `edgar-filings`, with the following fields:
-```
+```{.yaml .no-copy title="Field Names"}
 cik
 company_name
 form_type
@@ -49,7 +50,7 @@ accession
 ```
 
 For example, to produce a list of a few 10-K filings from 1994, you can run the following query via Redivis:
-```sql
+```sql title="SQL Query"
 SELECT * 
 FROM `edgar_filings` 
 WHERE form_type='10-K' and year=1994 
@@ -65,9 +66,9 @@ You can create a copy to modify or run the transforms yourself by "Forking" the 
 - filter all 8-K, 10-K and 10-Q filings
 - filter a year worth of filings using the output of the second transform as the input table
 
-For your convenience, we have also crafted a Python-based example project to illustrate how one might parse EDGAR filings on the Yens. In this example (an actual use case we encountered), we attempt to seek out sentences that contain a specific word, that also have adjacent sentences containin key target phrases. Please refer to the `edgar_filings_example_notebook.ipynb` notebook in the following directory for more information on how to explore this project:
+For your convenience, we have also crafted a Python-based example project to illustrate how one might parse EDGAR filings on the Yens. In this example (an actual use case we encountered), we attempt to seek out sentences that contain a specific word, that also have adjacent sentences containing key target phrases. Please refer to the `edgar_filings_example_notebook.ipynb` notebook in the following directory for more information on how to explore this project:
 
-```
+```title="Filepath"
 /zfs/data/NODR/EDGAR_HTTPS/example_project/
 ```
 
@@ -76,7 +77,7 @@ If you have a [WRDS](https://wrds-www.wharton.upenn.edu/){:target="_blank"} acco
 
 To access these filings, you can connect to [WRDS Cloud](https://wrds-www.wharton.upenn.edu/pages/support/the-wrds-cloud/introduction-wrds-cloud/){:target="_blank"} and either navigate to `/wrds/sec/warchives/` for raw filings or `/wrds/sec/wrds_clean_filings/` for cleaned filings.
 
-!!! note
+!!! warning
     The DARC team does not provide support for issues with WRDS. Please submit a ticket to [WRDS Support](https://wrds-www.wharton.upenn.edu/contact-support){:target="_blank"} instead.
 
 ## XBRL
@@ -104,7 +105,7 @@ Here are a few tools and their descriptions that the DARC team has found useful 
 
 Comprehensive Daily and Quarterly SEC Filings Index can be found at the WRDS [SEC Filings Index Search](https://wrds-www.wharton.upenn.edu/pages/get-data/wrds-sec-analytics-suite/wrds-sec-filings-index-data/sec-filings-index/){:target="_blank"} site.
 From here you can get an idea of what kind of forms were available from which companies dating back to the 1970s. You can search for a single or a list of CIK, TICKER, or GVKEY company code. Some of the output variables are:
-```
+```{.yaml .no-copy title="Field Names"}
 SEC Central Index Key (CIK)
 Filing Date (FDATE)
 First SECDate with Index Record Information (FINDEXDATE)
@@ -126,7 +127,7 @@ The [Readability and Sentiment Analysis](https://wrds-www.wharton.upenn.edu/page
 The WRDS SEC Readability and Sentiment data extends the WRDS SEC Analytics Suite by providing academic researchers a clean set of text files for every SEC filing since 1994, along with basic sentiment and readability scores. Researchers can use the pre-computed scores to further academic research, and can also compute their own features based on the raw text. You can find more information in the manual about this tool [here](https://wrds-www.wharton.upenn.edu/documents/751/WRDS_SEC_Readability_and_Sentiment_Manual.pdf){:target="_blank"}.
 
 Some of the many counts and scores it outputs include:
-```
+```{.yaml .no-copy title="Field Names"}
 Complete Report File Size (FSIZE)
 Paragraph Count (PARAGRAPHCOUNT)
 Raw Character Count (CHARCOUNT_RAW)
@@ -179,10 +180,13 @@ WRDS [Bag of Words (BoW) interface](https://wrds-www.wharton.upenn.edu/pages/get
 You can read more about how words are contructed and what summary measures were applied in the [manual](https://wrds-www.wharton.upenn.edu/documents/1081/WRDS_Bag_of_Words_Manual.pdf){:target="_blank"}. 
 
 Here are some of the modules available:
-```
+```{.yaml .no-copy title="Available Modules"}
 Filing Summary
 Similarity Measures
 Word Distribution
 Word Distribution (all filings)
 Word Summary
 ```
+
+## Additional Support
+If you have additional questions about these resources or would like a consultation about how you might leverage these resources for your research, please reach out to the DARC team at [gsb_darcresearch@stanford.edu](gsb_darcresearch@stanford.edu).
