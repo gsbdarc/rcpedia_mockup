@@ -6,7 +6,7 @@ authors:
     url: https://github.com/Jeffotter            # Author website URL
   mason:
     name: Mason Jiang        # Author name
-    description: Senior Data Engineer @DARC GSB Team # Author description
+    description: 🪨 Senior Data Engineer @DARC GSB Team # Author description
     avatar: https://github.com/mpj2104.png         # Author avatar
     url: https://github.com/mpj2104            # Author website URL
   nrapstin:
@@ -16,6 +16,6 @@ authors:
     url: https://github.com/natalya-patrikeeva                   # Author website URL
   awn:
     name: Amy Ng                                       # Author name
-    description: 🦄 Lead Research Analytics Scientist @DARC GSB Team  # Author description
+    description: Lead Research Analytics Scientist @DARC GSB Team  # Author description
     avatar: https://github.com/alwaysawn.png            # Author avatar
     url: https://github.com/alwaysawn                   # Author website URL
