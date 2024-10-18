@@ -1,16 +1,216 @@
-.md-header-nav__button img {
-    height: 100px;  /* Adjust based on your desired logo size */
-    width: auto;   /* Maintain aspect ratio */
+/* get header font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto+Slab:wght@300;400;700&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+/* theme color schemes */
+:root {
+  --md-primary-fg-color:               #820000
+  --md-primary-fg-color--light:        #b1040ddc;
+  --md-primary-fg-color--dark:         #820000;
+  --md-accent-fg-color:                #b1040d9e;
+  --md-accent-fg-color--transparent:   #b1040e0a;
 }
-.md-header__button.md-logo {
-    margin: 0;
-    padding: 0;
+
+/* accessibility requirement */
+.md-typeset a {
+    border-bottom: .05rem dotted var(--md-primary-fg-color--light);
 }
-.md-header__button.md-logo img, .md-header__button.md-logo svg {
-    height: auto;
-    width: 10rem;
+
+/* announce bar */
+.md-banner a,
+.md-banner a:focus,
+.md-banner a:hover {
+    color: currentColor;
+    border-bottom: none;
 }
+
+.md-banner .icon {
+    margin-left:  0.2em;
+}
+
 .md-banner {
-    background-color: #8C1515; /* Set your desired color */
-    color: #ffffff; /* Adjust text color if needed */
+  background-color:        #006CB8;
+  color:                   #ffffff; /*  text color */
+}
+
+.md-header-nav__button img {
+  height: 100px;  /* Adjust based on your desired logo size */
+  width: auto;   /* Maintain aspect ratio */
+}
+
+.md-header__button.md-logo {
+  margin: 0;
+  padding: 0;
+}
+
+.md-header__button.md-logo img, .md-header__button.md-logo svg {
+  height: auto;
+  width: 10rem;
+}
+
+.md-header {
+  background-color: white;
+  color: black;
+  box-shadow: 10px 10px 20px rgba(63, 63, 63, 0.10); /* horizontal offset, vertical offset, blur radius, and color */
+
+}
+
+.md-search__form {
+  transition: background-color 0.3s; /* Smooth transition for the background color change */
+  transition: color 0.3s; /* Smooth transition for the background color change */
+}
+
+.md-search__form:hover {
+  background-color: #919191; 
+}
+
+/* title style */
+.md-header__title {
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: black;
+}
+
+.md-header__title .md-ellipsis:after {
+    /* prevent text clipping */
+    content: '';
+    padding: 1px;
+}
+
+/* SITE TITLE */
+.md-header__topic:first-child { 
+  font-weight: 500;
+  color: black;
+}
+
+.md-tabs__item .md-tabs__link {
+  color: black; /* Sets the text color to black */
+}
+
+/* cookie consent link */
+.md-footer-meta.md-typeset .consent {
+    color: var(--md-footer-fg-color--lighter);
+}
+
+/* don't cut words in code */
+.md-typeset code { word-break: keep-all; }
+
+/* Sherlock admonition */
+.md-typeset .admonition.sherlock,
+.md-typeset details.sherlock {
+  border-color: #8c1515;
+}
+
+.md-typeset .sherlock > .admonition-title,
+.md-typeset .sherlock > summary {
+  background-color: #82000010;
+  border-color: #8c1515;
+}
+
+.md-typeset .sherlock > .admonition-title::before,
+.md-typeset .sherlock > summary::before {
+  background-color: #8c1515;
+  -webkit-mask-image: var(--md-admonition-icon--sherlock);
+          mask-image: var(--md-admonition-icon--sherlock);
+}
+
+/* additional styles */
+.chk_yes  { color: darkgreen; }
+.chk_no   { color: darkred;   }
+.fl_left  { float: left;      }
+.fl_right { float: right;     }
+
+.sw_mpi       { color: darkblue;  font-weight: bold; }
+.sw_mpi:after { content: "mpi" }
+.sw_gpu       { color: darkgreen; font-weight: bold; }
+.sw_gpu:after { content: "gpu" }
+.sw_lic       { color: darkred;   font-weight: bold; }
+.sw_lic:after { content: "lic" }
+.sw_def       { color: gray;      font-weight: bold; }
+.sw_def:after { content: "def" }
+
+.number {
+    font-size: 1.2rem;
+    color: var(--md-primary-fg-color);
+}
+
+.number_desc {
+    font-size: 0.8em;
+    margin-top: -1em !important;
+    color: var(--md-default-fg-color--light);
+}
+
+
+/* pulsate */
+@keyframes pulsate {
+  0%, 40%, 80%, 100% {
+    transform: scale(1);
+  }
+  20%, 60% {
+    transform: scale(1.15);
+  }
+}
+.pulsate {
+  color: #dd2e44;
+  animation: pulsate 1000ms infinite;
+}
+
+/* rotate */
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.rotate {
+  animation: rotation 2s infinite linear;
+}
+
+/* identity-bar */ 
+.identity-bar-container {
+  position: relative;
+  width: 100%;
+}
+
+.identity-bar {
+  position: relative;
+  width: 100%;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 1px;
+  background-color: transparent;
+  z-index: 1; 
+}
+
+.identity-bar-fw-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #8c1515; 
+  z-index: 0; /* Behind the .identity-bar */
+}
+
+/* Styling for the anchor tag within the div */
+.logo {
+  text-decoration: none; /* Removes underline from all states */
+  color: white; /* Text color for all states */
+  font-size: 20px; /* Font size */
+  line-height: 1; /* Leading (line height) as none */
+}
+
+/* Hover and focus states for the anchor tag */
+.logo:hover, .logo:focus {
+  text-decoration: none; /* Keeps text underline removed on hover/focus */
+}
+
+/* Media query for applying medium-specific padding */
+@media (min-width: 768px) { /* Adjusts breakpoint for medium devices */
+  .md:pl-30 {
+    padding-left: 30px;
+  }
 }
