@@ -1,6 +1,6 @@
 # Welcome to RCpedia
 
-RCpedia is a place to learn how to solve Research Computing tasks at Stanford GSB[.](images/narwhal04.png) 
+RCpedia is a place to learn how to solve Research Computing tasks at Stanford GSB[.](./assets/images/narwhal04.png) 
 
 !!! warning
     All the Yen servers are scheduled for a routine reboot next Thursday, July 25, 2024. During the downtime, the servers will be patched and updated, and logins are disabled. The machines are scheduled to cycle roughly every two months, and the downtime dates are posted on the message of the day when you log in to the Yens. Please complete any jobs and log out of the Yens before the reboot. If you have any questions or concerns, please send a Slack message or contact us at [gsb_darcresearch@stanford.edu](gsb_darcresearch@stanford.edu).

@@ -1,6 +1,8 @@
 If your research uses human subjects, directly or indirectly, you may be subject to additional regulations designed to protect subjects and their data. The information below highlights some important considerations for human subjects research, summarizing information from Stanford's [Human Research Protection Program](https://researchcompliance.stanford.edu/panels/hs/policies).
 
-{% include important.html content="Have questions about human subjects research? Contact the [IRB](https://researchcompliance.stanford.edu/panels/hs) for a consultation." %}
+!!! tip
+    Have questions about human subjects research? Contact the [IRB](https://researchcompliance.stanford.edu/panels/hs) for a consultation.  
+
 
 ---
 ### Definition
