@@ -11,13 +11,12 @@ theme:
     - content.code.select
     - content.code.copy
     - content.tabs.link
-    - navigation.indexes
-    - content.code.select
-    - content.code.copy
-    - navigation.sections
+  #  - navigation.indexes
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.tracking
+    - content.code.select
+    - content.code.copy
     - search.highlight
     - search.share
     - search.suggest

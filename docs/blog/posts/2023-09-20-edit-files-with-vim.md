@@ -11,6 +11,7 @@ We can utilize JupyterHub Text Editor to <a href="/gettingStarted/8_jupyterhub.h
 However, sometimes it is more convenient to quickly edit files from the command line (without needing to go to a different program like the browser
 or editing on your local machine then transferring the edited files).
 
+<!-- more -->
 We will use vim text editor that comes with Linux distributions and can be used on any HPC system or server.
 
 For the purposes of this course, we will make small changes to the slurm scripts or python scripts from the command line.
